@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<layout>
+	<settings>
+		<pre>PHA+</pre>
+		<separator>Jm5ic3A7fCA=</separator>
+		<post>PC9wPg==</post>
+	</settings>
+<link>
+	<type>1</type>
+	<pre></pre>
+	<target>/spoluprace.php</target>
+	<title></title>
+	<anchor>Spolupráce</anchor>
+	<post></post>
+</link>
+</layout>

@@ -1,0 +1,315 @@
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#BBDDEE;
+}
+
+.clearer{
+	clear:both;
+	font-size:1px;
+	height:0px;
+}
+
+#content_container_center{
+	margin:auto;
+	width:1200px;
+	font-family:Trebuchet MS;
+}
+
+#top_lista_left, #top_lista_right{
+	font-size:12px;
+	width:570px;
+	padding:0px 15px;
+	background:url(/sysimg/bg_horni_lista.gif);
+}
+#top_lista_left{float:left;}
+#top_lista_right{float:left;text-align:right;}
+
+#top_nav, #top_nav ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	list-style-position:outside;
+	position:relative;
+	width:1200px;
+	font-size:12px;
+	z-index: 100;
+}
+
+#top_nav li{
+    float:left;
+    position:relative;
+	display:block;
+	padding:15px 1px 0px 0px;
+	list-style-type:none;
+	font-size:12px;
+	height:23px;
+}
+
+#top_nav li li {
+	padding: 0;
+}
+
+#top_nav li a{
+	padding:5px 5px 5px 5px;
+	margin:0px;
+	background-color:#E7F7F7;
+	font-size:12px;
+	text-decoration:none;
+	color:#606060;
+}
+
+#top_nav li ul li a{
+	background-color: #E7F7F7;
+	width: 12em;
+}
+
+#top_nav li ul li a:hover{
+	background-color: white;
+	width: 12em;
+}
+
+#top_nav li a.active{
+	background-color:#FFF;
+	border:1px solid #FF7700;
+	border-bottom:1px solid #FFF;
+	padding-top:10px;
+}
+
+#top_nav ul {
+    position:absolute;
+    width:12em;
+    display:none;
+}
+
+#top_nav li ul {
+	margin: 5px 0 0 0;
+}
+
+#top_nav li ul a{
+    float:left;
+}
+
+#top_nav ul ul{
+	top:auto;
+}
+
+#top_nav li ul ul {
+    margin:0px 0 0 10px;
+}
+
+#top_nav li:hover ul ul, #top_nav li:hover ul ul ul, #top_nav li:hover ul ul ul ul{
+    display:none;
+}
+
+#top_nav li:hover ul, #top_nav li li:hover ul, #top_nav li li li:hover ul, #top_nav li li li li:hover ul{
+    display:block;
+}
+
+/*
+#top_nav{
+	margin:0px 0px 0px 0px;
+	padding:0px;
+	width:1200px;
+	font-size:12px;
+}
+
+#top_nav li{
+	float:left;
+	display:block;
+	padding:15px 1px 0px 0px;
+	list-style-type:none;
+	font-size:12px;
+	height:23px;
+}
+
+#top_nav li a{
+	padding:5px 5px 5px 5px;
+	margin:0px;
+	background-color:#E7F7F7;
+	font-size:12px;
+	text-decoration:none;
+	color:#606060;
+}
+
+#top_nav li a.active{
+	background-color:#FFF;
+	border:1px solid #FF7700;
+	border-bottom:1px solid #FFF;
+	padding-top:10px;
+}
+*/
+
+
+#container{
+	background-color:#FFF;
+	border:1px solid #FF7700;
+	padding:10px;
+}
+
+div#leftContent{
+	float:left;
+	width:221px;
+	padding-right:10px;
+}
+
+div.menu_header{
+	color:#FFF;
+	background-color:#FF7700;
+	padding:5px;
+}
+
+ul.menu_links{
+	background-color:#EEEEEE;
+	margin:0px; padding:0px;
+	list-style-type:none;
+	font-size:12px;
+	border-bottom:2px solid #FF7700;
+}
+
+ul.menu_links li{
+	padding:3px 0px;
+	border-bottom:1px dashed #BBC0B0;
+}
+
+ul.menu_links li a{
+	text-decoration:none;
+	color:#3E3E3E;
+	display:block;
+	padding-left:20px;
+	background:url(/sysimg/left_menu_arrow.gif) 3px center no-repeat;
+}
+
+ul.menu_links li a:hover{
+	background-color:#F5F5F5;
+}
+
+
+div#rightContent{
+	float:left;
+	width:927px;
+	padding:10px 10px 0px 10px;
+	background:url(/sysimg/bg_content.png) no-repeat;
+}
+
+h1{
+	padding:0px;
+	margin:0px;
+	color:#336699;
+	font-size:30px;
+	font-weight:normal;
+	border-bottom:3px dotted #FF7700;
+	margin:0px 0px 10px 0px; 
+}
+
+h2, p{
+	padding:0px;
+	margin:10px 0px 10px 0px;
+}
+
+h2{
+	color:#336699;
+	font-size:21px;
+	font-weight:normal;
+}
+
+p {
+	font-size:12px;
+}
+
+table.top_heading{
+	font-size:12px;
+	border:1px solid #9097A9;
+}
+
+table.top_heading th{
+	background-color:#9097A9;
+	padding:2px 5px;
+}
+
+table.top_heading th a{
+	text-decoration:none;
+	color:#FFF;
+}
+
+table.top_heading td a{
+	color:#222;
+}
+
+table.top_heading td a:hover{
+	text-decoration:none;
+}
+
+table.top_heading tr td{
+	background-color:#D8D8D8;
+	padding:2px 5px;
+}
+
+table.top_heading tr.odd td{
+	background-color:#ECECEC;
+}
+
+table.left_heading{
+	font-size:12px;
+	border:1px solid #9097A9;
+}
+
+table.left_heading th{
+	background-color:#9097A9;
+	padding:2px 5px;
+	text-align:left;
+}
+
+table.left_heading th sup{
+	color:#FF1493;
+	font-weight:normal;
+}
+
+table.left_heading tr td{
+	background-color:#D8D8D8;
+	padding:2px 5px;
+}
+
+div.square .topCorners, div .square .bottomCorners{height:23px;width:221px;}
+div.square .topCorners{background-image:url(../images/topCorners.png);}
+div.square .bottomCorners{background-image:url(../images/bottomCorners.png);}
+div.calendar{font-family:Arial, sans-serif;font-size:12px;}
+div.calendar .topCorners{background-image:url(../images/calendarCorners.png); height:50px;}
+div.calendar .content{height:155px;padding-top:4px;}
+div.calendar .topCorners p{font-weight:bold;padding-left:15px;color:black;line-height:46px;text-align:center;font-size:14px;}
+div.calendar .topCorners p a{text-decoration:none;font-size:18px;font-weight:bold;color:black;}
+div.calendar .topCorners p a:hover{color:gray;}
+div.calendar table{width:200px;margin-left:11px;color:white;}
+div.calendar table .cal{text-align:center;vertical-align:middle;}
+div.calendar table .cal a{display:block;padding:3px;text-decoration:none;color:white;}
+div.calendar table .cal a:hover, div.calendar table .calActive a{background:white!important;color:black;}
+div.calendar table .hasSolution a{text-decoration:underline}
+div.calendar table .calToday a{border:2px solid white;padding:2px;margin:1px;}
+
+div.square.orange .content{background-image:url(../images/orange/background.png);}
+div.square.orange .topCorners{background-image:url(../images/orange/topCorners.png);}
+div.square.orange .bottomCorners{background-image:url(../images/orange/bottomCorners.png);}
+div.calendar.orange .topCorners{background-image:url(../images/orange/calendarCorners.png); height:50px;}
+div.calendar.orange table .cal a{background-image:url(../images/orange/background.png);}
+.orange #verticalnav li{height:26px;background-image:url(../images/orange/background.png);}
+.orange #verticalnav > li ul{width:221px;padding-left:50px;background:url(../images/arrow.png) no-repeat 20px top;}
+.orange #verticalnav li.hover, .orange #verticalnav li:hover{background-image:url(../images/orange/hover-back.png);}
+
+.darkClass {
+    background-color: white;
+    filter:alpha(opacity=50); /* IE */
+    opacity: 0.5; /* Safari, Opera */
+    -moz-opacity:0.50; /* FireFox */
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.loading {
+	z-index:30;	
+}

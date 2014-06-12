@@ -1,0 +1,199 @@
+BusinessPartner.id;BusinessPartner.name;BusinessPartner.ico;BusinessPartner.dic;Address.name;Address.person_first_name;Address.person_last_name;Address.street;Address.city;Address.zip;Address.region;User.fullname
+1;MUDr. Jeíková Helena;68191847;;MUDr. Jeíková Helena;Helena;Jeíková ;U zbrojnice;Pøerov;75002;Pøerov;Radovan Kramáø
+2;MUDr. Hanušová Ivana - Ordinace lékaøù Klatovy s.r.o.;28035593;;Ordinace lékaøù Klatovy s.r.o.;;;;Klatovy III;;;Zdena Klímová
+3;MUDr. Hulán Karel - D+H Praktici s.r.o.		;29266921;CZ29266921;D+H Praktici s.r.o.;;;;Šatov;67122;;Zdena Klímová
+4;Jirousová Taána MUDr. - vnitøní,všeobec.lékaøství;46630228;;Jirousová Taána MUDr. - vnitøní,všeobec.lékaøství;;;Budìjovická;Veselí nad Lunicí;39181;;Zdena Klímová
+5;MUDr. Stanislava Kubšová;48547514;;MUDr. Stanislava Kubšová;;;Plzeòská;Praha 5;15000;;Zdena Klímová
+6;MUDr. Kollarová Bohumila;60076828;;MUDr. Bohumila Kollarová;;;Nová;Lišov;37373;;Zdena Klímová
+7;MUDr. Dana Švábová;48683191;;MUDr. Dana Švábová;;;Studentská;Mnichovo Hradištì;29501;;Zdena Klímová
+8;MUDr. Jolana Rùièková Vršková;40610861;;MUDr. Jolana Rùièková Vršková;;;Milíèová;Praha 3 - ikov;13000;;Zdena Klímová
+9;MUDr. Jana Zámeèníková;46772073;;MUDr. Jana Zámeèníková;;;Krabèická;Roudnice nad Labem;41301;;Zdena Klímová
+10;MUDR. RADKO DOUCHA - PRAKTICKİ LÉKAØ PRO DOSPÌLÉ;62728318;;MUDR. RADKO DOUCHA - PRAKTICKİ LÉKAØ PRO DOSPÌLÉ;;;;Hronov;54931;;Zdena Klímová
+11;MUDr. Fumferová, praktická lékaøka pro dospìlé;47078391;;MUDr. Fumferová, praktická lékaøka pro dospìlé;;;K Náklí;Tınec nad Sázavou;25741;;Zdena Klímová
+12;MUDr. Miloslav Lehnert;48739332;;MUDr. Miloslav Lehnert;;;;Novı Hrozenkov;75604;;Zdena Klímová
+13;MUDr.Jaroslav Nìmeèek -praktickı lékaø pro dosp.;44939132;;MUDr.Jaroslav Nìmeèek -praktickı lékaø pro dosp.;;;Školská ;Zábøeh;78901;;Zdena Klímová
+14;MUDR. MARTIN SLAVÍK;46768611;;MUDR. MARTIN SLAVÍK;;;Masarykova;Tøebívlice;41115;;Zdena Klímová
+15;MUDr. Martina Anderová;72041005;;MUDr. Martina Anderová;;;Dukelská;Plumlov;79803;;Zdena Klímová
+16;MUDr. Václav Filip;48804916;;MUDr. Václav Filip;;;Veøovice;Veøovice;74273;;Zdena Klímová
+17;MUDr. Jan Hartman;47465484;;MUDr. Jan Hartman;;;Námìstí horníkù;Rtynì v Podkrkonoší;54233;;Zdena Klímová
+18;MUDR.CHALUPOVÁ OLGA - PRAKTICKİ LÉKAØ;49279548;;MUDR.CHALUPOVÁ OLGA - PRAKTICKİ LÉKAØ;;;Morseova;Praha 15;10900;;Zdena Klímová
+19;MUDr. Jana Janù;72056487;;MUDr. Jana Janù;;;Lipová;Most;43401;;Zdena Klímová
+20;MUDr. Ludmila Koukalová;45212996;;MUDr. Ludmila Koukalová;;;Moravièanská;Loštice;78983;;Zdena Klímová
+21;MUDr. Daniel Kubina;45213631;;MUDr. Daniel Kubina;;;Hrnèíøská;Hluèín;74801;;Zdena Klímová
+22;MUDr. Jaromír Mrazík s.r.o.;29307511;CZ29307511;MUDr. Jaromír Mrazík s.r.o.;;;Dolní;Ostroská Nová Ves;68722;;Zdena Klímová
+23;MUDr. Zdenìk Pospíšil;75149389;;MUDr. Zdenìk Pospíšil;;;Tovární;Postøelmov;78969;;Zdena Klímová
+24;MUDr. Jan Øehák;70904367;;MUDr. Jan Øehák;;;Rokycanova;Pardubice V;53002;;Zdena Klímová
+25;MUDr. Radka SİKOROVÁ;70737576;;MUDr. Radka SİKOROVÁ;;;Soukalova;Praha 12;14300;;Zdena Klímová
+26;MUDr. Marie Böhmová;71194223;;MUDr. Marie Böhmová;;;Závodu míru;Nejdek;36221;;Zdena Klímová
+27;MUDR.JAROSLAVA GRUNTORÁDOVÁ - PRAKTICKİ LÉKAØ;46751963;;MUDR.JAROSLAVA GRUNTORÁDOVÁ - PRAKTICKİ LÉKAØ;;;Bendlova;Èeská Lípa;47001;;Zdena Klímová
+28;MUDr. Josef Husièka;45238740;;MUDr. Josef Husièka;;;Komenského;Námìš na Hané;78344;;Zdena Klímová
+29;MUDr. Kalinec  Aleš - Aledion Medical Centre spol. s r.o.;28660706;CZ28660706;Aledion Medical Centre spol. s r.o.;;;Letenská;Ronov pod Radhoštìm;75661;;Zdena Klímová
+30;Jiøí Klug MUDr.;75009064;;Jiøí Klug MUDr.;;;Gruzínská ;Svitavy;56802;;Zdena Klímová
+31;MUDr. Vladislava Mrázková;46997636;;MUDr. Vladislava Mrázková;;;Nádraní;Bystøice pod Hostınem;76861;;Zdena Klímová
+33;MUDr. Miluše Kakrdová;65350561;;MUDr. Miluše Kakrdová;;;Bezruèova;Brno;60200;;Radovan Kramáø
+34;MUDr. Vlastimil Boèek;71153675;;MUDr. Vlastimil Boèek;;;obliná ;Brno;60200;;Radovan Kramáø
+35;MUDr. Alena Krásová;65296389;;MUDr. Alena Krásová;;;Nové sady;Brno;60200;;Radovan Kramáø
+36;MUDr. Iva Jeleníková;41575954;;MUDr. Iva Jeleníková;;;Marešova ;Brno;60200;;Radovan Kramáø
+37;MUDr. Šindlerová Lenka;43256945;;MUDr. Šindlerová Lenka;;;U Kostela;Jablonec nad Nisou;46604;;Zdena Klímová
+38;MUDr. Popek Roman;71199420;;MUDr. Popek Roman;;;9.kvìtna;Zbıšov;66411;;Zdena Klímová
+39;MUDr. Šlosar  Ivo;46791655;;MUDr. Šlosar  Ivo;;;Èervenohradecká;Jirkov;43111;;Zdena Klímová
+40;Mudr. Ludvík Vratislav;48653012;;Mudr. Ludvík Vratislav;;;Køenkova;Èeská Skalice;55203;;Zdena Klímová
+41;MUDr. Bártová Zdeòka;49209655;;MUDr. Bártová Zdeòka;;;;elezná Ruda;34004;;Zdena Klímová
+42;MUDr. Hanuliaková Vìra;44940131;;MUDr. Hanuliaková Vìra;;;K Vápeníkám;Zábøeh;78901;;Zdena Klímová
+43;MUDr. Lukešová Zdeòka;45655910;;MUDr. Lukešová Zdeòka;;;Tasovice;Tasovice;67125;;Zdena Klímová
+44;MUDr. Plachá Jana;29238919;;MUDr. Plachá Jana;;;Tuøanka;Brno;62700;;Zdena Klímová
+45;MUDr. Rousová Zuzana;65268644;;MUDr. Rousová Zuzana;;;Meèíøová;Brno;61200;;Zdena Klímová
+46;MUDr. Stodolová Magda ;70951187;;MUDr. Stodolová Magda ;;;Eimova;Polièka - Horní Pøedmìstí;57201;;Zdena Klímová
+47;MUDr. Šubert Igor;43380051;;MUDr. Šubert Igor;;;Radostín nad Oslavou;Radostín nad Oslavou;59444;;Zdena Klímová
+48;MUDr. Vildomcová Ilona;49457691;;MUDr. Vildomcová Ilona;;;Dlouhá;Veverská Bítıška;66471;;Zdena Klímová
+49;MUDr. Bešáková Lenka;29085101;;MUDr. Bešáková Lenka;;;Purkyòova;Plzeò;30100;;Zdena Klímová
+50;MUDr. Jana Vildová;60553391;;MUDr. Jana Vildová;;;Boetìchova ;Brno;61200;;Radovan Kramáø
+51;MUDr. Michaela Koukalová;66570671;;MUDr. Michaela Koukalová;;;Majdalenky;Brno;63800;;Radovan Kramáø
+52;MUDr. Pevná Danuše;49466330;;MUDr. Pevná Danuše;;;Hlinky;Brno;60300;;Zdena Klímová
+53;MUDr. Buchtová Miloslava ;49468618;;MUDr. Buchtová Miloslava ;;;Sadová ;Blansko;67801;;Zdena Klímová
+54;MUDr. Fleischmannová Vladimíra;75094061;;MUDr. Fleischmannová Vladimíra;;;Smetanova ;Kolín IV;28002;;Zdena Klímová
+55;MUDr. Hadravová Irena;75095157;;MUDr. Hadravová Irena;;;Tovární vrch;Doksy;47201;;Zdena Klímová
+56;MUDr. Hrubı Jiøí;47921323;;MUDr. Hrubı Jiøí;;;Olomoucká;Prostìjov;79601;;Zdena Klímová
+57;MUDr. Jeíková Helena;68191847;;MUDr. Jeíková Helena;;;U zbrojnice;Pøerov V - Dluhonice;75002;;Zdena Klímová
+58;test;12312123;;test;;;;test;;;Martin Polák
+59;MUDr. Bronislava Krchòáková;00000000;;Ordinace;;;Mendlovo námìstí ;Brno;;;Radovan Kramáø
+60;MUDr. Otakar Ach-Hübner;00000000;;Ordinace;;;Mendlovo námìstí;Brno;60300;;Radovan Kramáø
+61;MUDr. Josef Laub;00000000;;Ordinace;;;Mendlovo námìstí;Brno;60300;;Radovan Kramáø
+62;MUDr. Dagmar Baniová;00000000;;Ordinace;;;Mendlovo námìstí;Brno;60300;;Radovan Kramáø
+63;MUDr. Luboš Oliva;75125161;;MUDr. Luboš Oliva;;;Pekaøská;Lednice;69144;;Zdena Klímová
+64;MUDR. Helena Stárková;72050624;;MUDR. Helena Stárková;;;Foerstrova;Olomouc;77900;;Zdena Klímová
+65;MUDr.Vašica Petr, praktickı lékaø pro dospìlé - internista;47259141;;MUDr.Vašica Petr, praktickı lékaø pro dospìlé - internista;;;Nad Stadionem;38501;;;Zdena Klímová
+66;MUDr. Vladimíra Karásková  - Ponikelská ordinace s.r.o.;28817516;CZ28817516;Ponikelská ordinace s.r.o.;;;Poniklá;Poniklá;51242;;Zdena Klímová
+67;MUDr. Baèová Lenka, s.r.o.;29304172;CZ29304172;MUDr. Baèová Lenka, s.r.o.;;;1.máje;Uherské Hradištì;68605;;Zdena Klímová
+68;MUDr. Ljuba Tomèíková - ordinace praktického lékaøe pro dospìlé;66363055;;MUDr. Ljuba Tomèíková - ordinace praktického lékaøe pro dospìlé;;;Americká;Františkovy Láznì;35101;;Zdena Klímová
+69;MUDr. Jiøina Hesová Nìmeèková, s.r.o;28345894;CZ28345894;MUDr. Jiøina Hesová Nìmeèková, s.r.o;;;Riegrova ;Znojmo;66902;;Zdena Klímová
+70;MUDr. Petr Tamler;69909202;;MUDr. Petr Tamler - IPTAM;;;Duchcovská;Teplice;41500;;Zdena Klímová
+71;Mudr. Dušan Cigánik;49563009;;Dušan Cigánik;;;;Velké Karlovice;75606;;Zdena Klímová
+72;MUDR. VÌRA ÈÁPOVÁ;42552885 ;;MUDR. VÌRA ÈÁPOVÁ;;;Vinohradská;Praha 3;13000;;Zdena Klímová
+73;MUDr. Jaromíra Kazdová;47996129;;MUDr. Jaromíra Kazdová;;;Hrnèíøská;Hluèín;74801;;Zdena Klímová
+74;MUDr. Hana Dolealová, s.r.o.;28156188;CZ28156188;MUDr. Hana Dolealová, s.r.o.;;;;Svatá Maøí;38501;;Zdena Klímová
+75;MUDr. Petr Šubrt;49332643;;MUDr. Petr Šubrt;;;;Lhota pod Libèany;50327;;Zdena Klímová
+76;MUDr. Tomáš Pøikryl;66055474;;MUDr. Tomáš Pøikryl;;;Ruská;Kouøim;28161;;Zdena Klímová
+77;MUDr. Lubomír Procházka;75079518;;MUDr. Lubomír Procházka;;;Praská;Èeské Budìjovice;37004;;Zdena Klímová
+78;MUDr. Šèerbová Klára - Asplund s.r.o.;22798820;CZ22798820;Asplund s.r.o.;;;Štefánikova;Ústí nad Labem;40001;;Zdena Klímová
+79;MUDr. Irena Prudká - praktická lékaøka;43379508;;MUDr. Irena Prudká - praktická lékaøka;;;Zdrav. Støedisko;Roveèné;59265;;Zdena Klímová
+80;MUDr. Hendlová Alena;66005809;;MUDr. Hendlová Alena;;;Kasalova;Zeleneè;25091;;Zdena Klímová
+81;MUDr. Ivana Mašková;66545978;;MUDr. Ivana Mašková;;;;Dolní Louèky;59455;;Zdena Klímová
+82;MUDR.JIØÍ KLEMENT - PRAKTICKİ LÉKAØ;46752391;;MUDR.JIØÍ KLEMENT - PRAKTICKİ LÉKAØ;;;Nové Mìsto;Dubá;47141;;Zdena Klímová
+83;MUDr. Dana Mrazíková s.r.o.;29309182;CZ29309182;MUDr. Dana Mrazíková s.r.o.;;;nám. sv. Ondøeje;Uherskı Ostroh;687 2;;Zdena Klímová
+84;MUDr. Jana Denková;71231315;;MUDr. Jana Denková;;;Nádraní;Mimoò;47124;;Zdena Klímová
+85;MUDr. Bohumír Beneda;75122341;CZ7405021239;MUDr. Bohumír Beneda;;;E.Beneše;Èeské Budìjovice;37006;;Zdena Klímová
+86;MUDr. Procházka Lubomír- MEDALEX s.r.o.;28158725;CZ28158725;MEDALEX s.r.o.;;;Praská;Èeské Budìjovice;37004;;Zdena Klímová
+87;MUDr.MARTA HADRAVOVÁ-PRAKTICKİ LÉKAØ,INTERNISTA;61517810;;MUDr.MARTA HADRAVOVÁ-PRAKTICKİ LÉKAØ,INTERNISTA;;;;Sosnová;47001;;Zdena Klímová
+88;MUDr. Renata Bednáøová;45234795;;MUDr. Renata Bednáøová;;;;Jindøichov;79384;;Zdena Klímová
+89;MUDr. Pavel Rùièka;71236104;CZ6705151475;MUDr. Pavel Rùièka;;;Komenského námìstí;Jaromìøice nad Rokytnou;67551;;Zdena Klímová
+90;MUDr.JOGENDRA JOGHEE - PRAKRICKİ LÉKAØ;46752579;;MUDr.JOGENDRA JOGHEE - PRAKRICKİ LÉKAØ;;;Ústecká;Èeská Lípa;47001;;Zdena Klímová
+91;MUDr. Marie Klepaèová;71246452;;MUDr. Marie Klepaèová;;;;Dubenec;54455;;Zdena Klímová
+92;Vacátková Kateøina MUDr. - praktickı lékaø;16389824;;Vacátková Kateøina MUDr. - praktickı lékaø;;;Èechova;Rychnov u Jablonce nad Nisou;46802;;Zdena Klímová
+93;MUDr. PETR CEDRYCH - VŠEOBECNÉ LÉKAØSTVÍ;48287547;;MUDr. PETR CEDRYCH - VŠEOBECNÉ LÉKAØSTVÍ;;;;Zahrádky;47101;;Zdena Klímová
+94;MUDr. Jiøí Klouda - praktickı lékaø pro dospìlé;66389054;;MUDr. Jiøí Klouda - praktickı lékaø pro dospìlé;;;Námìstí 167;Plánice;34034;;Zdena Klímová
+95;MUDr.Pavel Krupièka-praktickı lékaø;43752187;;MUDr.Pavel Krupièka-praktickı lékaø;;;Zahradníèkova;Brandıs nad Labem-Stará Boleslav;25002;;Zdena Klímová
+96;MUDr. Renáta Molnárová;71066608;;MUDr. Renáta Molnárová;;;Frostova;Praha-Petrovice;109 0;;Zdena Klímová
+97;MUDr. Tomáš Nosek;72564229;;MUDr. Tomáš Nosek;;;;Batelov;58851;;Zdena Klímová
+98;MUDr. Vladimír Klos;64816303;;MUDr. Vladimír Klos;;;Námìstí;eleznice;50713;;Zdena Klímová
+99;MUDr. Jiøí Praák - Medbase s.r.o.;28307208;CZ28307208;Medbase s.r.o.;;;Boeny Nìmcové;76824;Hulín;;Zdena Klímová
+100;MUDr. Anna Víšková;48481726;;MUDr. Anna Víšková;Anna;Víšková;Komenského;Újezd u Brna;66453;;Radovan Kramáø
+101;MUDr. Kamila Karmašová;00000000;;MUDr. Kamila Karmašová;Kamila;Karmašová;Kubíèkova;Brno;;;Radovan Kramáø
+102;MUDr. Rotová Pavla;64669327;;MUDr. Rotová Pavla;;;Na Kopci;Jablonec nad Nisou;46601;;Zdena Klímová
+103;MUDr. Hamouz Zdenìk;46791680;;MUDr. Hamouz Zdenìk;;;Dostojevského;Chomutov;43001;;Zdena Klímová
+104;MUDr. Stárková Helena - Ordinace praktického lékaøe Olomouc s.r.o.;28567145;CZ28567145;Ordinace praktického lékaøe Olomouc s.r.o.;MUDr. Helena;Stárková ;Foerstrova ;Olomouc;77900;;Zdena Klímová
+105;MUDr. Horáková Marie;48551899;;MUDr. Horáková Marie;;;Ukrajinská;Praha 10;10100;;Zdena Klímová
+106;MUDr. áèková Lucie - Ordinace Libìchov s.r.o.;24309915;CZ24309915;Ordinace Libìchov s.r.o.;;;Libìchov;Libìchov;277 2;;Zdena Klímová
+107;MUDr. Èadová Jana;48378836;;MUDr. Èadová Jana;;;Letná;Mıto;33805;;Zdena Klímová
+108;MUDr. Luboš Oliva s.r.o.;29366348;CZ29366348;MUDr. Luboš Oliva s.r.o.,;Eva;Musílová, sestra;Pekaøská;Lednice;69144;;Zdena Klímová
+109;MUDr. Petr Zlámal s.r.o.;29210518;CZ29210518;MUDr. Petr Zlámal s.r.o.;;;Vaškova;Brno;615 0;;Zdena Klímová
+110;MUDr. Boena Krianová - ordinace praktického lékaøe pro dospìlé;49777742;;MUDr. Boena Krianová - ordinace praktického lékaøe pro dospìlé;;;lutická;Plzeò;32329;;Zdena Klímová
+111;MUDr.Jana Císaøová,prakt.lékaø pro dospìlé;49855336;;MUDr.Jana Císaøová,prakt.lékaø pro dospìlé;;;Karlovotısnká;Rudná;25219;;Zdena Klímová
+112;Mudr. Vlèek Rudolf - PRAKTICKÉ LÉKAØSTVÍ Vlèkovi s.r.o.;29122236;;PRAKTICKÉ LÉKAØSTVÍ Vlèkovi s.r.o.;;;Školská;Zábøeh;78901;;Zdena Klímová
+113;MUDr. Dagmar Štancová - ordinace praktické lékaøky;49588303;;MUDr. Dagmar Štancová - ordinace praktické lékaøky;;;Bøezová;Mìsto Touškov;33033;;Zdena Klímová
+114;MUDr. Lenkvíková Eva - WASO Medi s.r.o.;48269301;CZ48269301;WASO Medi s.r.o.;;;Ovovcná;Liberec 6;46006;;Zdena Klímová
+115;MUDr. Zuzana Vanèová;75082179;;MUDr. Zuzana Vanèová;;;Hlinecká;Trhová Kamenice;53952;;Zdena Klímová
+116;MUDr. Mikušová  Kateøina - Ordinace Heliovi s.r.o.;29193851;CZ29193851;Ordinace Heliovi s.r.o.;;;;Tupesy;68707;;Zdena Klímová
+117;MUDr. Sedláèková Lucie - Praktickı lékaø Beroun s.r.o.;24851043;CZ24851043;Praktickı lékaø Beroun s.r.o.;;;Havlíèkova;Beroun;26601;;Zdena Klímová
+118;MUDr. Andrea TRÈKOVÁ;70959951;;MUDr. Andrea TRÈKOVÁ;;;Libušská;Praha Libuš;14200;;Zdena Klímová
+119;MUDr. Markéta Štìpánková;64202691;;MUDr. Markéta Štìpánková;;;Rooseveltova;Dvùr Králové nad Labem;54401;;Zdena Klímová
+120;MUDr. Škubal František - Ordinace MUDr. František Škubal s.r.o.;29279283;CZ29279283;Ordinace MUDr. František Škubal s.r.o.;;;Lešenská;Zlín;76314;;Zdena Klímová
+121;MUDr. Aichler Tomáš - Medicus Polepy s.r.o.;22793071;CZ22793071;Medicus Polepy s.r.o.;;;Polepy;Polepy;41147;;Zdena Klímová
+122;MUDr. Jan Køivskı;42754534;CZ530224025;MUDr. Jan Køivskı;;;Luanská ;Kácov;28509;;Zdena Klímová
+123;MUDr. Ladislav Hodeèek;65805674;;MUDr. Ladislav Hodeèek;;;Myslbekova;Novı Bor;47301;;Zdena Klímová
+124;MUDr. Zdenìk Rottenborn - praktickı lékaø a internista;48378755;;MUDr. Zdenìk Rottenborn - praktickı lékaø a internista - MEDITAP s.r.o.;;;Vokáèova;Rokycany;33701;;Zdena Klímová
+125;MUDr. Škopek Pavel - MEDITAP s.r.o.;28029411;CZ28029411;MEDITAP s.r.o.;;;U Svépomoci;Plzeò;30100;;Zdena Klímová
+126;MUDr. Lenka Bøezovská;72768185;;MUDr. Lenka Bøezovská;;;Palackého;Litomìøice;41201;;Zdena Klímová
+127;MUDR.ZDENEK ALTMAN - PRAKTICKİ LÉKAØ;48287300;;MUDR.ZDENEK ALTMAN - PRAKTICKİ LÉKAØ;;;Bulharská;Èeská Lípa;47001;;Zdena Klímová
+128;MUDr Zdenìk Koubek;43752381;;MUDr Zdenìk Koubek;;;Mìlnická;Brandıs nad Labem - Stará Boleslav;25001;;Zdena Klímová
+129;MUDr.Tomáš GAVLAS;47005408;;MUDr.Tomáš GAVLAS;;;;Hradištko;25209;;Zdena Klímová
+130;MUDr. Petr Bohanes - praktickı lékaø;43382941;;MUDr. Petr Bohanes - praktickı lékaø;;;;Nedvìdice;59262;;Zdena Klímová
+131;Vavøichová Marta MUDr. - praktickı lékaø;60252090;;Vavøichová Marta MUDr. - praktickı lékaø;;;Pøíèná;eleznı Brod;46822;;Zdena Klímová
+132;Mudr. Šonka Petr - MEDISON s.r.o.;61173789;CZ61173789;MEDISON s.r.o.;;;Pod všemi svatımi ;Plzeò;30164;;Zdena Klímová
+133;MUDR.IVA BEEROVÁ,PRAKTICKÁ A INTERNÍ LÉKAØKA;47610344;;MUDR.IVA BEEROVÁ,PRAKTICKÁ A INTERNÍ LÉKAØKA;;;Zárubova;Praha 12;14200;;Zdena Klímová
+134;Mudr. Janovská Jana - Praktickı lékaø MH, s.r.o.;24285510;CZ24285510;Praktickı lékaø MH, s.r.o.;;;Studentská;Mnichovo Hradištì;29501;;Zdena Klímová
+135;MUDr. Michaela Zilvarová;65602579;;MUDr. Michaela Zilvarová;;;Hlavní;Øepín;27733;;Zdena Klímová
+136;MUDr. Yvona Kotroušová;69535124;;MUDr. Yvona Kotroušová;;;;Blatná;38801;;Zdena Klímová
+137;MUDR. JAN HOLEC;46770275;;MUDR. JAN HOLEC;;;Sokolská;Dobøín;41111;;Zdena Klímová
+138;MUDr. Eva Nováková;75088347;;MUDr. Eva Nováková;;;8. pìšího pluku;Frıdek Místek;73802;;Zdena Klímová
+139;MUDr. Helena HUCLOVÁ;48548090;;MUDr. Helena HUCLOVÁ;;;Na Úlabinou;Praha;10800;;Zdena Klímová
+140;MUDR. EVA VRAŠTILOVÁ;46769366;;MUDR. EVA VRAŠTILOVÁ;;;Mírové námìstí;Úštìk;41145;;Zdena Klímová
+141;MUDr. Klára Matoušová;75155737;;MUDr. Klára Matoušová;pá - 7:30 - 13:00 - areál agro;;Vestecká ;Zlatníky-Hodkovice;25241;;Zdena Klímová
+142;Mudr. Helia Dušan - Ordinace Heliovi s.r.o.;29193851;CZ29193851;Ordinace Heliovi s.r.o.;;;V humnech;Kunovice;68604;;Zdena Klímová
+143;MUDr. Vajsejtl Pavel - PV-AMBULANCE s.r.o.;29112877;CZ29112877;PV-AMBULANCE s.r.o.;;;Nerudova;Cheb;35000;;Zdena Klímová
+144;Škvaøil Emanuel, MUDr.;49468588;;Škvaøil Emanuel, MUDr.;;;;Kunštát;67972;;Zdena Klímová
+145;Mudr. Škopková Tamara - OS-Medical s.r.o.;29091373;CZ29091373;OS-Medical s.r.o.;;;Vrchlického ;Slatiòany;53821;;Zdena Klímová
+146;MUDr. Sehnalová Nadìda;68378823;;MUDr. Sehnalová Nadìda;;;;Obøíství;27742;;Zdena Klímová
+147;MUDr. Pavel Touška;71193499;;MUDr. Pavel Touška;;;Husova;Chomutov;43003;;Zdena Klímová
+148;POHOØELÁ JAROSLAVA MUDr.;46792244;;POHOØELÁ JAROSLAVA MUDr.;;;Úzká;Dìèín;40502;;Zdena Klímová
+149;MUDr. Bartušek Miroslav - PRAKTICKİ LÉKAØ;49629379;;PRAKTICKİ LÉKAØ;MUDr. Miroslav;Bartušek ;NAD MALİM MLİNEM;Praha;14700;;Zdena Klímová
+150;MUDr. Julie HollmannováMUDr. Hollmannová Julie;71240667;;MUDr. Julie Hollmannová;;;Píseèná;Jablonec nad Nisou;46801;;Zdena Klímová
+151;Mudr Švábová Markéta - InMed-SV s.r.o.;28678133;;InMed-SV s.r.o.;;;;Jenèice;41115;;Zdena Klímová
+152;MUDr. Kresa Petr - Zdravotní støedisko Zbùch s.r.o.;29098645;;Zdravotní støedisko Zbùch s.r.o.;;;Plzeòská;Zbùch;33022;;Zdena Klímová
+153;MUDr. Hana Šedivá;47267186;;MUDr. Hana Šedivá;;;;Malšice;39175;;Zdena Klímová
+154;MUDr.Skotáková Eva;00000000;;Poliklinika Lesná;;;Halasovo námìstí ;Brno;63800;;Radovan Kramáø
+155;MUDr.Snášelová Radomíra;29262887;;Poliklinika Lesná;MUDr.Radmila;Snášelová;Halasovo námìstí;Brno;63800;;Radovan Kramáø
+156;prof.MUDr.Elbl Lubomír, CSc.;60430605;;Poliklinika Lesná;;;Halasovo námìstí;Brno;63800;;Radovan Kramáø
+157;Karlík KRKA;00000000;;KRKA-REP;;;Sokolovská;Praha;18600;;Radovan Kramáø
+158;Horká KRKA;00000000;;KRKA-REP;;;;Praha;18600;;Radovan Kramáø
+159;Vassová KRKA;00000000;;KRKA-REP;;;Sokolovská;Praha;18600;;Radovan Kramáø
+160;Lefnerová KRKA;00000000;;KRKA-REP;;;Sokolovská;Praha;18600;;Radovan Kramáø
+161;Šmíd KRKA;00000000;;KRKA-REP;;;Sokolovská;Praha;18600;;Radovan Kramáø
+162;Vajnrajch MEDOCHEMIE;00000000;;MEDOCHEMIE-REP;;;Lehárova;Praha;14300;;Radovan Kramáø
+163;Poláèek ORIONPHARMA;00000000;;ORIONPHARMA-REP;;;Zelenı pruh;Praha;14000;;Radovan Kramáø
+164;MUDr.Holoubek Vladimír ;00000000;;ORTOPEDIE;;;Bohunická ;Brno;61900;;Radovan Kramáø
+165;MUDr. Jana Lenartová s.r.o;29390371;;MUDr. Jana Lenartová s.r.o;;;V Mešníku;Ostrava-Tøebovice;72200;;Zdena Klímová
+166;MUDR. JAROSLAVA KUDLÁÈKOVÁ;49108212;;MUDR. JAROSLAVA KUDLÁÈKOVÁ;;;Polní;Chrastava;46331;;Zdena Klímová
+167;MUDR. JAROSLAVA KUDLÁÈKOVÁ;49108212;;MUDR. JAROSLAVA KUDLÁÈKOVÁ;;;Polní;Chrastava;46331;;Zdena Klímová
+168;MUDr. Jana Hrabalová;75055848 ;;MUDr. Jana Hrabalová;;;;Bøezolupy;68713;;Zdena Klímová
+169;MUDr. Šraierová Dana - Caretta s.r.o.;27183491;;Caretta s.r.o.;;;Podvinnı Mlın;Praha 9;19000;;Zdena Klímová
+170;MUDr. Homolková Jana;47366401;;MUDr. Homolková Jana;;;Palackého;Jihlava;58601;;Zdena Klímová
+171;MUDr. Mahdíková Taána - Ordinace JACH-TA, s.r.o.;24259047;CZ24259047;Ordinace JACH-TA, s.r.o.;;;Na Petøinách;Praha 6 - Bøevnov;16200;;Zdena Klímová
+172;MUDr. Pátíková Barbora;72023490;;MUDr. Pátíková Barbora;;;tø. Odboje;Otrokovice;76502;;Zdena Klímová
+173;MUDr. Jursík Peter;71233806;;MUDr. Jursík Peter;;;Maxima Grokého;Vejprty;43191;;Zdena Klímová
+174;MUDr. Švébiš Martin;75070456;;MUDr. Švébiš Martin;;;Hlavní;Frıdlant nad Ostravicí;73911;;Zdena Klímová
+175;MUDr. Oušková Jana ;46053891;;MUDr. Oušková Jana ;;;Ruprechtická;Liberec;46001;;Zdena Klímová
+176;MUDr. Duchanová Michaela;75146738;;MUDr. Duchanová Michaela;;;Horní;Doksy;47201;;Zdena Klímová
+177;MUDr. Jedlièková Zuzana;66880149;;MUDr. Jedlièková Zuzana;;;Rajmnova;Praha 8;18200;;Zdena Klímová
+178;MUDr. Škoda Vladimír;64446263;;MUDr. Škoda Vladimír;;;Sovìtská;Buèovice;68501;;Zdena Klímová
+179;MUDr. Švandová Kvìta;47248912;;MUDr. Švandová Kvìta;;;Masarykova;Humpolec;39601;;Zdena Klímová
+180;MUDr. Makovec Miroslav;49743970;;MUDr. Makovec Miroslav;;;J. K. Tyla;Sokolov;35601;;Zdena Klímová
+181;MUDr. Pavlíèek Martin;72059796;;MUDr. Pavlíèek Martin;;;B. Nìmcové;Náchod;54701;;Zdena Klímová
+182;MUDr. Cinertová Marie;47734264;;MUDr. Cinertová Marie;;;Plzeòská;Tøemošná;33011;;Zdena Klímová
+183;MUDr. ivkoviè Milica - Micy s.r.o.;29283850;;Micy s.r.o.;;;;Novı Šaldorf-Sedlešovice;67181;;Zdena Klímová
+184;MUDr. Jurásek Jan;45212431;;MUDr. Jurásek Jan;;;Školská;Zábøeh;78901;;Zdena Klímová
+185;MUDr. Hošek Josef;49332619;;MUDr. Hošek Josef;;;Palackého;Nechanice;50315;;Zdena Klímová
+186;Mudr. Konáš Jiøí;43765866;;Mudr. Konáš Jiøí;;;Buzulucká;Komárov;26762;;Zdena Klímová
+187;MUDr. Tomáštík Dalibor;46956701;;MUDr. Tomáštík Dalibor;;;;Osvìtimany;68742;;Zdena Klímová
+188;MUDr. Krtièková Miroslava;48622575;;MUDr. Krtièková Miroslava;;;Jiøího z Podìbrad;Hronov;54931;;Zdena Klímová
+189;MUDr. Jaroslav Trávníèek;63293188;;MUDr. Jaroslav Trávníèek;;;Palackého;Sedlice;38732;;Zdena Klímová
+190;Mudr. Koòaøík Rostislav;43728936;;Mudr. Koòaøík Rostislav;;;Tvrdého;Praha 18;19900;;Zdena Klímová
+191;Doc. MUDr. Seifert Bohumil, Ph.D. - Ordinace PL Karlín, s.r.o.;28904222;CZ28904222;Ordinace PL Karlín, s.r.o.;;;Šaldova;Praha 8;18600;;Zdena Klímová
+192;MUDr.Martinec Lubomír ;00000000;;Poliklinika Lesná;;;Halasovo námìstí;Brno;63800;;Radovan Kramáø
+193;MUDr. Košál Jiøí;61515108;;MUDr. Košál Jiøí;;;Baarova;Teplice;41501;;Zdena Klímová
+194;MUDr. Voøíšková Jana;47078499;;MUDr. Voøíšková Jana;;;Syllabova;Bystøice;25751;;Zdena Klímová
+195;MUDr. Masopustová Jolana;16531744;;MUDr. Masopustová Jolana;;;Poštovní;Zruè na Sázavou;28522;;Zdena Klímová
+196;MUDr. Koláøová Markéta;72035421;;MUDr. Koláøová Markéta;;;Praská;Mìlník;27601;;Zdena Klímová
+197;MUDr. Guièová Iva;72043113;;MUDr. Guièová Iva;;;Lovosická;Praha 9;19000;;Zdena Klímová
+198;MUDr. Dvoøák Josef -Medicle s.r.o.;29161967;;Medicle s.r.o.;;;Drustevní;Plzeò 3;30100;;Zdena Klímová
+199;MUDr.Grublová Milana;00000000;;Poliklinika Lesná;;;Halasovo námìstí;Brno;63800;;Radovan Kramáø

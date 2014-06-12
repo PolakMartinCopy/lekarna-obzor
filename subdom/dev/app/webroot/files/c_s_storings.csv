@@ -1,0 +1,7 @@
+CSTransactionItem.id;CSStoring.date_day;CSStoring.date_month;CSStoring.date_year;Product.id;ProductVariant.id;ProductVariant.exp;ProductVariant.lot;CSTransactionItem.product_name;Product.vzp_code;Product.group_code;Product.referential_number;CSTransactionItem.quantity;CSTransactionItem.price;Unit.shortcut;BusinessPartner.id;BusinessPartner.name;User.id;User.last_name
+476;05;12;2013;;;;;One Touch Verio test strips (CZ, SLO, HR);;;;500;400,00;;;;12;Klímová
+475;05;12;2013;;;;;One Touch Ultra test strips (CZ, SLO, HR);;;;50;400,00;;;;12;Klímová
+474;05;12;2013;;;;;Freestyle Optium 50s test strips (SZ,SLO, HR);;;;405;400,00;;;;12;Klímová
+467;25;11;2013;15;6;;;MOLIMED Air Active Mini (premium) ;134502;HVLP;;10;150,00;bal.;;;1;Polák
+466;25;11;2013;15;6;;;MOLIMED Air Active Mini (premium) ;134502;HVLP;;10;200,00;bal.;;;1;Polák
+468;25;11;2013;17;8;;;MOLICARE Premium Soft Super Medium;31866;HVLP;;10;300,00;bal.;;;1;Polák

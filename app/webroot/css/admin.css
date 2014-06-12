@@ -1,0 +1,130 @@
+body{
+	font-family:Arial;
+}
+
+a{
+	text-decoration:underline;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+p{
+	font-size:14px;
+}
+
+table#mainWrapper{
+	width:1000px;
+	border:1px solid black;
+	margin:auto;
+}
+ul#categoriesMenu{
+	margin:0;
+	padding:0;
+}
+
+ul#categoriesMenu li{
+	list-style-type:none;
+}
+
+td.leftSideWrapper{
+	border-right:1px solid black;
+	width:250px;
+}
+
+h2{
+	margin:0px 0px 10px 0px;
+}
+
+table.topHeading{
+	width:100%;
+	border:1px solid black;
+}
+table.topHeading th{
+	background-color:black;
+	font-size:12px;
+	color:white;
+}
+
+table.topHeading td{
+	border-bottom:1px solid black;
+}
+
+table.topHeading th a {
+	color:white;
+}
+
+table.leftHeading{
+	width:100%;
+}
+table.leftHeading th{
+	font-size:12px;
+	text-align:right;
+	vertical-align:top;
+}
+
+table.leftHeading td{
+}
+
+table.leftHeading th a {
+	color:white;
+}
+
+
+
+div.actions ul li{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+div.paging{
+	margin-top:10px;
+	font-size:12px;
+	font-weight:bold;
+}
+
+div.disabled{
+	display:inline;
+}
+
+fieldset{
+	background-color:#F5F5F5;
+}
+
+div.submit{
+	display:inline;
+}
+
+span.formNote{
+	font-size:10px;
+	font-weight:normal;
+}
+
+div.orderedProductAttributes{
+	font-size:11px;
+}
+
+div.orderedProductAttributes span{
+	padding-left:20px;
+}
+
+table#orderDisplay{
+	font-size:12px;
+	width:99%;
+}
+
+table#productList{
+
+}
+
+div#flashMessage{
+	font-family:Tahoma;
+	border:1px solid red;
+	background:yellow;
+	color:red;
+	font-size:14px;
+	padding:15px;
+	margin:15px;
+}

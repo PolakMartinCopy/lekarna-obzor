@@ -1,0 +1,93 @@
+Product.id;Product.name;Product.vzp_code;Product.group_code;Unit.name;Product.price;Product.margin
+13;boty pro diabetiky;;123;pár;1600,00;2,50
+14;glukometr;01134;X;kus;5000,00;0,00
+22;Apo-Perindo tbl.100x4mg;0120796;HVLP;balení;337,00;33,00
+61;Nolpaza tbl.84x40mg;109415;HVLP;balení;494,00;24,00
+69;Kventiax tbl.30x200mg;111855;HVLP;balení;205,00;37,00
+10;aspirin;123456;987;balení;50,00;0,00
+71;Cezera tbl.30x5mg;124343;HVLP;balení;137,00;37,00
+81;Cezera tbl.90x5mg;124346;HVLP;balení;413,00;33,00
+82;Apo-Diclo SR tbl30x100mg;125121;HVLP;balení;106,00;35,00
+85;Afiten tbl.100x5mg;125365;HVLP;balení;201,00;35,00
+34;Afiten tbl.100x10mg;125375;HVLP;balení;268,00;33,00
+66;Mirzaten Oro tbl.30x30mg;127778;HVLP;balení;185,00;26,00
+87;Medoram tbl.100x5mg;131751;HVLP;balení;329,00;33,00
+86;Medoram tbl.30x10mg;131758;HVLP;balení;135,00;35,00
+15;Elicea tbl.28x10mg;134502;HVLP;balení;201,00;37,00
+21;Elicea tbl.90x10mg;134507;HVLP;balení;697,00;20,00
+16;Elicea tbl.28x5mg;135002;HVLP;balení;151,00;37,00
+79;Doreta 37.5mg/325mg.tbl.30;138841;HVLP;balení;60,00;12,00
+63;Azibiot tbl.3x500mg;142164;HVLP;balení;135,00;30,00
+84;Clopidogrel Actavis tbl.28x75mg ;143535;HVLP;balení;73,00;37,00
+45;Rosumop tbl.30x10mg;145551;HVLP;balení;238,00;33,00
+44;Rosumop tbl.100x10mg;145558;HVLP;balení;796,00;20,00
+47;Rosumop tbl.30x20mg;145567;HVLP;balení;349,00;33,00
+46;Rosumop tbl.100x20mg;145574;HVLP;balení;1224,00;20,00
+23;Apo-Atorvastatin tbl.100x10mg;147065;HVLP;balení;398,00;33,00
+24;Apo-Atorvastatin tbl.100x20mg;147075;HVLP;balení;796,00;20,00
+91;Emanera cps.30x40mg;147929;HVLP;balení;176,00;35,00
+93;Rosucard tbl.90x10mg;148070;HVLP;balení;716,00;24,00
+42;Tulip tbl.30x40mg;148306;HVLP;balení;367,00;33,00
+43;Tulip tbl.90x40mg;148309;HVLP;balení;1102,00;20,00
+57;Suprelip cps.100x200mg;151193;HVLP;balení;465,00;33,00
+88;Tezeo tbl.90x80mg;152959;HVLP;balení;404,00;33,00
+56;Zyrtec tbl.90x10mg;155686;HVLP;balení;413,00;33,00
+18;Zulbex tbl.56x20mg;157141;HVLP;balení;354,00;33,00
+89;Isame tbl.100x150mg;158011;HVLP;balení;359,00;33,00
+90;Isame tbl.100x300mg;158016;HVLP;balení;479,00;24,00
+99;Cancombino 16mg/12.5mg tbl.28;158993;HVLP;balení;131,00;35,00
+25;Apo-Rosuvastatin tbl.100x10mg;159115;HVLP;balení;796,00;20,00
+70;Donepezil tbl.dis. 28x10mg;161204;HVLP;balení;1142,00;20,00
+96;Pharmtina tbl.100x20mg;163439;HVLP;balení;796,00;20,00
+60;Atoris tbl.30x30mg;166470;HVLP;balení;307,00;33,00
+30;Tolura tbl.28x80mg;167673;HVLP;balení;134,00;37,00
+29;Tolura tbl.84x80mg;167676;HVLP;balení;402,00;33,00
+77;Dasselta tbl.10x5mg;168834;HVLP;balení;45,00;37,00
+78;Dasselta tbl.30x5mg;168836;HVLP;balení;137,00;37,00
+37;Trombex tbl.90x75mg;169252;HVLP;balení;1492,00;17,00
+95;Lanzul cps.28x30mg;17121;HVLP;balení;190,00;35,00
+100;Carzap tbl.28x16mg;171547;HVLP;balení;134,00;35,00
+32;Citalec tbl.30x20mg;17431;HVLP;balení;216,00;33,00
+101;Citalec tbl.60x20mg;17433;HVLP;balení;432,00;31,00
+92;Canocord tbl.28x16mg;175280;HVLP;balení;134,00;35,00
+83;Melovis tbl.30x15mg;176710;HVLP;balení;193,00;35,00
+48;Piramil Combi 5mg/5mg cps.30 ;178576;HVLP;balení;153,00;37,00
+49;Piramil Combi 5mg/5mg cps.100;178578;HVLP;balení;502,00;24,00
+52;Piramil Combi 10mg/5mg cps.30;178580;HVLP;balení;185,00;37,00
+53;Piramil Combi 10mg/5mg cps.100;178582;HVLP;balení;598,00;24,00
+50;Piramil Combi 5mg/10mg cps.30;178584;HVLP;balení;173,00;37,00
+51;Piramil Combi 5mg/10mg cps.100;178586;HVLP;balení;560,00;24,00
+54;Piramil Combi 10mg/10mg cps.30;178588;HVLP;balení;205,00;37,00
+55;Piramil Combi 10mg/10mg cps.100;178590;HVLP;balení;656,00;24,00
+80;Doreta 75mg/650mg.tbl.30;179327;HVLP;balení;143,00;12,00
+28;Zanacodar tbl.90x80mg;184333;HVLP;balení;431,00;33,00
+59;Sorvasta tbl.28x15mg;184397;HVLP;balení;286,00;33,00
+33;Sorvasta tbl.28x10mg;184408;HVLP;balení;222,00;37,00
+62;Sorvasta tbl.28x20mg;184452;HVLP;balení;342,00;33,00
+98;Tonarssa 4mg/5mg tbl.90;187793;HVLP;balení;333,00;31,00
+26;Roxilip tbl.98x10mg;198719;HVLP;balení;780,00;20,00
+27;Roxilip tbl.98x20mg;198725;HVLP;balení;1200,00;20,00
+75;Fromilid Uno tbl.7x500mg;23314;HVLP;balení;199,00;35,00
+74;Fromilid Uno tbl.14x500mg;23315;HVLP;balení;399,00;33,00
+20;Olwexya tbl.28x75mg;24973;HVLP;balení;130,00;37,00
+19;Olwexya tbl.28x150mg;24986;HVLP;balení;173,00;37,00
+31;Helicid 20 cps.90x20mg;25366;HVLP;balení;314,00;33,00
+68;Zalasta tbl.dis.28x5mg;29607;HVLP;balení;732,00;24,00
+67;Zalasta tbl.dis.28x10mg;29617;HVLP;balení;977,00;20,00
+17;Asentra tbl.28x50mg;31866;HVLP;balení;201,00;37,00
+65;Asentra tbl.28x100mg;31867;HVLP;balení;268,00;33,00
+94;Atoris tbl.90x10mg;49006;HVLP;balení;358,00;33,00
+58;Atoris tbl.90x20mg;49009;HVLP;balení;716,00;24,00
+64;IFIRMASTA tbl.28x300mg;500892;HVLP;balení;134,00;35,00
+40;Tulip tbl.30x10mg;50309;HVLP;balení;119,00;37,00
+35;Tulip tbl.90x10mg;50311;HVLP;balení;358,00;33,00
+41;Tulip tbl.30x20mg;50316;HVLP;balení;238,00;33,00
+36;Tulip tbl.90x20mg;50318;HVLP;balení;716,00;24,00
+76;Tanyz cps.90x0.4mg;51822;HVLP;balení;763,00;20,00
+72;Fromilid tbl.14x500mg;53283;HVLP;balení;399,00;33,00
+38;Tramal Retard tbl.30x150mg;56844;HVLP;balení;147,00;37,00
+73;Fromilid gra.susp.1x60ml;58491;HVLP;balení;152,00;35,00
+97;Tralgit SR tbl.50x100mg;59673;HVLP;balení;163,00;25,00
+39;Tramal 50 inj.5x1ml/50mg ;6200;HVLP;balení;26,00;0,00
+11;brufen;a12345;987;balení;40,00;0,00
+12;inzulinove tablety;asd456;123;balení;600,00;0,00

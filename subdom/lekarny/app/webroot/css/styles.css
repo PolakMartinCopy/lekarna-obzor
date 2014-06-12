@@ -1,0 +1,1268 @@
+body{
+	background-color:#F5F5F5;
+	margin:0px;
+	padding:0px;
+}
+
+.clearer{
+    clear:both;
+    font-size:1px;
+    height:0px;
+    background-color:red;
+}
+
+#total_wrapper{
+    background-image:url(../images/body_bg.gif);
+    width:966px;
+    margin:auto;
+    padding:20px;
+    font-family:Arial;
+    font-size:12px;
+}
+
+#header_left{
+    background-image:url(../images/logo_slogan.jpg);
+    width:593px; height:152px;
+    border-right:2px solid #FFF;
+    float:left;
+}
+
+#header_right{
+    width:371px; height:152px;
+    float:left;
+}
+
+#header_right ul {
+    list-style-type:none;	
+}
+
+#header_right .button{
+    height:15px;
+    text-align:center;
+    padding:13px 0px;
+    float:left;
+    background-color:#DEDEDE;
+}
+
+#header_right .button.active {
+    background-color:#A5CF4E;	
+}
+
+#header_right .prihlaseni{
+    width:96px;
+    border-right:2px solid #FFF;
+}
+
+#header_right .kosik{
+    width:126px;
+    border-right:2px solid #FFF;
+}
+
+#header_right .o_lekarne{
+    width:145px;
+}
+
+#header_right .button a{
+    color:#454545;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+#header_right #menu_login, #header_right #menu_cart, #header_right #menu_about {
+    clear:both;
+    height:111px;
+    background-color:#A5CF4E;
+    font-family: Segoe UI;
+}
+
+#menu_login {
+	padding-left: 5px;
+}
+
+#menu_cart #cart_stats{
+	padding:15px 0px 0px 25px;
+	font-size:12px;
+	color:#454545;
+	font-weight:bold;
+}
+
+#menu_cart #cart_stats span.price{
+	font-size:16px;
+	color:#FFF;
+}
+
+#menu_cart #cart_links{
+	padding:10px 0px 0px 20px;
+}
+
+#menu_cart #cart_links a{
+	display:block;
+	float:left;
+	padding:9px 14px;
+	color:#FFF;
+	text-decoration:none;
+	margin-left:5px;
+}
+
+#menu_cart #cart_links a.dump{ background:#82A734; }
+#menu_cart #cart_links a.to_cart{ background:#555555; }
+#menu_cart #cart_links a.to_order{ background:#008A00; }
+
+
+input.text_box{
+    border:1px solid #7DA42E;
+    width:123px;
+    height:27px;
+    padding:5px;
+    margin:0px 8px 0px 0px;
+}
+
+input.submit{
+    border:none;
+    width:43px;
+    height:37px;
+    background:#008A00;
+    border:6px solid #008A00;
+    color:#FFF;
+}
+
+input::-moz-focus-inner /*Remove button padding in FF*/{
+    border: 0;
+    padding: 0;
+}
+
+form#login_form_top {
+    padding:24px 0px 0px 19px;
+}
+
+#header_right #menu_about > ul{
+	padding-top: 12px;
+}
+
+.text_links, .text_links a{
+    color:#008A00;
+    font-size:12px;
+    font-weight:bold;
+}
+
+ul.text_links{
+	float:left;
+	padding-left:25px;
+}
+
+.text_links a:hover{
+    text-decoration:none;
+}
+
+#horizontal_menu{
+    background:#555;
+    height:47px;
+}
+
+.menu_spacer{
+    height:13px;
+    clear:both;
+}
+
+#horizontal_menu a{
+    color:#FFF;
+    text-decoration:none;
+    display:block;
+    float:left;
+    text-align:center;
+    padding:16px 15px;
+    background:url(../images/menu_item_bg.gif) repeat-y right;
+    font-weight:bold;
+}
+
+#horizontal_menu a:hover{
+    color:#A5CF4E;
+}
+
+#horizontal_menu #right_side{
+    float:right;
+}
+
+#horizontal_menu #right_side p{ /*e*/
+    float:left;
+    padding:15px 0px;
+    margin:0px;
+    color:#A5CF4E;
+    font-weight:bold;
+    margin-right:25px;
+}
+
+#horizontal_menu #right_side p#phone{
+    background:url(../images/phone_icon.gif) no-repeat center left;
+    padding-left:22px;
+}
+
+#horizontal_menu #right_side p#mail{
+    background:url(../images/mail_icon.gif) no-repeat center left;
+    padding-left:20px;
+}
+
+#content{ width:670px; font-family: Segoe UI; }
+#content.right{ float:right; }
+#content.product{ margin-top:15px; }
+#content.left{ float:left;padding-right:28px; }
+
+#search_box{
+    background:#A5CF4E;
+    height:38px;
+    padding:5px 5px;
+}
+
+input.search_query{
+    border:1px solid #7DA42E;
+    width:566px;
+    height:26px;
+    padding:5px;
+    margin:0px;
+    background-color:#F9F9F9;
+    color:#9A9A9A;
+}
+
+input.search_query.wide{
+    width:862px;
+}
+
+input.search_submit{ /*e*/
+	border:none;
+    width:78px;
+    height:38px;
+    background:#008A00;
+    border:6px solid #008A00;
+    color:#FFF;
+}
+
+#slides{
+    background:url(../images/slide_2.jpg);
+    width:671px; height:295px;
+}
+
+#button_categories{
+	border:1px solid #F3F3F3;
+	border-bottom: none;
+	width:126px; height:16px; /* 126 x 52 */
+	color:#90BB38;
+	font-weight:bold;
+	font-family: Segoe UI;
+	text-align:center;
+	padding:18px 0px;
+	float:left;
+	margin-right:3px;
+}
+
+#button_indications{
+	border:1px solid #FFF;
+	border-bottom:none;
+	width:126px; height:16px; /* 126 x 52 */
+	color:#636466;
+	font-weight:bold;
+	font-family: Segoe UI;
+	text-align:center;
+	padding:18px 0px;
+	float:left;
+	margin-right:3px;
+	background-color:#F9F9F9;
+}
+
+#categories_wrapper{
+    clear:both;
+    border:1px solid #F3F3F3;
+    border-top:none;
+    background:url(../images/categories_menu_bg.gif) no-repeat;
+    padding:10px;
+}
+
+.main_category{
+    border:1px solid #E1E1E1;
+    float:left;
+    padding:10px;
+    margin-left:15px;
+    margin-top:15px;
+    width:184px;
+}
+
+#categories_wrapper .first{
+    margin-left:0px;
+}
+
+#categories_wrapper .top{
+    margin-top:0px;
+}
+
+.main_category a.top_cat{
+    color:#84B226;
+    font-family: Segoe UI;
+}
+
+.main_category p a{
+    font-size:10px;
+	font-family: Segoe UI;
+    color:#3F3F3F;
+}
+
+.main_category p{
+    padding-left:35px;
+    min-height:90px;
+    line-height:14px;
+}
+
+.main_category p.vitaminy{ background:url(../images/vitaminy_icon.gif) no-repeat; }
+.main_category p.deti_maminky{ background:url(../images/deti_maminky_icon.gif) no-repeat; }
+.main_category p.zdravotnicky_material{ background:url(../images/zdravotnicky_material.gif) no-repeat; }
+.main_category p.caje_diety{ background:url(../images/caje_diety.gif) no-repeat; }
+.main_category p.kosmetika{ background:url(../images/kosmetika.gif) no-repeat; }
+.main_category p.chripka_kasel{ background:url(../images/chripka_kasel.gif) no-repeat; }
+.main_category p.sportovni_vyziva{ background:url(../images/sportovni_vyziva.gif) no-repeat; }
+.main_category p.homeopatika{ background:url(../images/homeopatika.gif) no-repeat; }
+.main_category p.veterinarni{ background:url(../images/veterinarni.gif) no-repeat; }
+.main_category p.klouby_svaly{ background:url(../images/klouby_svaly.gif) no-repeat; }
+.main_category p.bolest{ background:url(../images/bolest.gif) no-repeat; }
+
+
+
+a img{
+    border:none;
+}
+
+#navigation{
+    float:left;
+}
+
+#navigation #navi_header{
+    background:#636466;
+    color:#FFF;
+    font-weight:bold;
+    font-family: Segoe UI;
+    width:405px; height:14px; /* 435 x 40 */
+    padding:13px 15px;
+}
+
+
+#hours{
+    float:left;
+    margin-left:15px;
+}
+
+#hours #navi_hours{
+    background:#008A00;
+    color:#FFF;
+    font-weight:bold;
+    font-family: Segoe UI;
+    width:190px; height:14px; /* 220 x 40 */
+    padding:13px 15px;
+}
+
+#sidebar{
+    float:left;
+    width:268px;
+    font-weight:bold;
+    font-family: Segoe UI;
+}
+
+#sidebar .header{
+    padding:13px 15px;
+	color:#FFF;
+
+}
+
+#sidebar .vyhody{
+    background:#008A00;
+}
+
+#sidebar .nejprodavanejsi{
+    background:#60A917;
+}
+
+#sidebar .nejnovejsi{
+    background:#E99B1F;
+}
+
+.product_listing_narrow{
+    padding:10px;
+	background:#EBEBEB;
+}
+
+.product_listing_narrow img{
+    border:1px solid #F5F5F5;
+    float:left;
+}
+
+.product_listing_narrow .product_name{
+    float:left;
+    width:150px;
+    margin:0px;
+    margin-left:15px;
+    padding:0px;
+}
+
+.product_listing_narrow .product_link{
+    float:left;
+    margin:5px 0px 0px 15px;
+    padding:0px;
+}
+
+.product_listing_narrow .product_link a{
+    display:block;
+    padding:7px 12px;
+    color:#FFF;
+}
+
+.product_listing_narrow .nejprodavanejsi a{
+    background:#60A917;
+}
+
+.product_listing_narrow .nejnovejsi a{
+    background:#E99B1F;
+}
+
+.product_listing_narrow .product_name a{
+    color:#636466;
+}
+
+#sukl_area{
+    width:268px;
+    height:67px;
+    background:#F0F0F0;
+    text-align:center;
+    padding-top:8px;
+}
+
+#footer_wrapper{
+    background:#A5CF4E;
+    padding:25px;
+    font-family: Segoe UI;
+}
+
+#footer_wrapper .header{
+    color:#284908;
+    font-weight:bold;
+}
+
+.footer_area{
+    float:left;
+    padding:0px 15px;
+}
+
+#footer_wrapper .narrow{
+    width:160px;
+}
+
+#footer_wrapper .wide{
+    width:235px;
+}
+
+input.text_box_suggest{ /*e*/
+    border:1px solid #7DA42E;
+    width:123px;
+    height:27px;
+    padding:5px;
+    margin:0px 0px 0px 0px;
+}
+
+input.submit_suggest{ /*e*/
+	border:none;
+    width:88px;
+    height:37px;
+    background:#425911;
+    border:6px solid #425911;
+    color:#FFF;
+}
+
+input.text_box_newsletter{ /*e*/
+    border:1px solid #7DA42E;
+    width:123px;
+    height:27px;
+    padding:5px;
+    margin:0px 0px 0px 0px;
+}
+
+input.submit_newsletter{
+	border:none;
+    width:88px;
+    height:37px;
+    background:#425911;
+	border:6px solid #425911;
+    color:#FFF;
+}
+
+.footer_area ul{
+    margin:0px;
+    margin-top:15px;
+    padding:0px;
+    list-style-type:none;
+}
+
+.footer_area form{
+    margin-top:15px;
+}
+
+.footer_area ul li a{
+    color:#284908;
+}
+
+.footer_area p{
+	margin:0px;
+	margin-top:15px;
+    padding:0px;
+    color:#284908;
+}
+
+/**********************************/
+/**********************************/
+
+div#breadcrumbs{
+    font-family: Segoe UI;
+}
+
+div#breadcrumbs a{
+    color:#777777;
+}
+
+ul#nav, ul#nav ul {
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+    font-weight:bold;
+    font-family: Segoe UI;
+}
+
+ul#nav li a{
+    color:#FFF;
+    text-decoration:none;
+    border-bottom:1px solid #007000;
+}
+
+ul#nav li p a{
+	color:#008A00;
+}
+
+ul#nav > li > a{
+    display:block;
+	background:#008A00;
+    padding:10px;
+}
+
+ul#nav > li > a.actual{
+    color:#A5CF4E;
+	background-color:#007000;
+}
+
+ul#nav > li > ul > li > a{
+    display:block;
+    padding:10px;
+	background:url(../images/menu_arrow.gif) no-repeat 10px center;
+	background-color:#A5CF4E;
+    padding-left:25px;
+	color:#002400;
+}
+
+ul#nav > li > ul > li > ul > li > a{
+    display:block;
+	padding:10px;
+	background:url(../images/menu_arrow.gif) no-repeat 25px center;
+	background-color:#A5CF4E;
+    padding-left:40px;
+    color:#002400;
+}
+
+h1{
+    color:#008A00;
+    font-size:21px;
+    font-family: Segoe UI;
+}
+
+h2{
+    color:#008A00;
+    font-size:16px;
+    font-family: Segoe UI;
+    font-weight:lighter;
+}
+
+h2.product_listing{
+    float:left;
+    margin-bottom:0px;
+}
+
+h3{
+    color:#008A00;
+    font-size:12px;
+}
+
+div.category_description{
+    padding:15px;
+    font-family: Segoe UI;
+    background:#F4F4F4;
+}
+
+div#product_listing_featured_container {
+	border:1px solid #F5F5F5;
+	margin-top:15px;
+	padding: 0 0 10px 8px;
+	background-color: #F5F5F5;
+}
+
+.product_listing_featured{
+    border:1px solid #F4F4F4;
+    float:left;
+    margin-left:8px;
+    width:210px;
+    text-align:center;
+}
+
+.product_listing_featured.first{
+    margin-left:0px;
+}
+
+div#sort_options{
+    float:right;
+    margin-top:15px;
+    color:#555555;
+}
+
+div#sort_options a{
+    color:#555555;
+    text-decoration:none;
+}
+
+div#sort_options a.active{
+    color:#008A00;
+    font-weight:bold;
+}
+
+div.product_listing{
+    border:1px solid #E7E7E7;
+    float:left;
+    margin:0 0 10px 16px;
+    text-align:center;
+    width:210px;
+}
+
+div.product_listing h3 {
+	height: 25px;
+}
+
+div.product_listing h3 a, div.product_listing_featured h3 a {
+    color:#008A00;
+    text-decoration: none;
+}
+
+div.product_listing p.description {
+	height:150px;
+	overflow: hidden;
+}
+
+div.product_listing.first{
+    margin-left:0;
+}
+
+div.product_listing p{
+    padding:0 10px;
+    text-align:justify;
+}
+
+div.product_listing p.availability{
+    font-size:11px;
+    font-weight:bold;
+    text-align:center;
+}
+
+div.product_listing a.buy_now{
+    background:#008A00;
+    color:#FFFFFF;
+    font-weight:bold;
+    padding:5px 10px;
+    text-decoration:none;
+}
+
+div.product_listing a.buy_now:hover{
+    background:#212121;
+}
+
+div#product_detail{
+    font-family: Segoe UI;
+}
+
+div#main_image{
+	width:279px;
+	height:279px;
+	border:1px solid #F3F3F3;
+	padding:9px;
+	float:left;
+	margin-right:15px;
+}
+
+div#basic_info{
+	float:left;
+	width:320px;
+}
+
+div#basic_info p{
+	padding:0px;
+	margin:0px;
+	font-size:13px;
+	color:555;
+}
+
+div#basic_info p span.header{
+	color:#008A00;
+}
+
+div#basic_info p.manufacturer{
+	font-size:13px;
+}
+
+div#basic_info p.note {
+	margin-top:20px; 	
+}
+
+div#basic_info p.note span.header {
+	color: #F10548;
+}
+
+div#basic_info p.availability{
+	margin-top:20px;
+}
+
+div#basic_info p.price{
+	margin-top:35px;
+}
+
+div#basic_info p.price span.nominal{
+	font-size:18px;
+	font-weight:bold;
+}
+
+div#basic_info p.availability a{
+	color:#555;
+	font-size:11px;
+}
+
+form#cart{
+	margin-top:20px;
+}
+
+input.text_box_quantity{
+    border:1px solid #7DA42E;
+    width:20px;
+    height:27px;
+    padding:5px;
+    margin:0px 8px 0px 0px;
+}
+
+input.submit_cart{
+    border:none;
+    width:130px;
+    height:37px;
+    background:url(../images/cart_icon.gif) no-repeat left center;
+    background-color:#008A00;
+    border:6px solid #008A00;
+    color:#FFF;
+    font-weight:bold;
+    padding-left:20px;
+}
+
+div#contact_info{
+	float:right;
+}
+
+div#contact_info p{
+	background:#F5F5F5;
+	padding:15px;
+	color:#8C8C8C;
+}
+
+div#contact_info p span.bolder{
+	color:#008A00;
+	font-size:17px;
+	font-weight:bold;
+}
+
+div#contact_info ul li a{
+	color:#555;
+}
+
+div#contact_info ul li a:hover{
+	color:#008A00;
+}
+
+div#contact_info ul{
+	list-style-image:url(../images/bullet.gif);
+}
+
+#product_details_wrapper{
+    clear:both;
+    border:1px solid #F3F3F3;
+    border-top:none;
+    background:url(../images/categories_menu_bg.gif) no-repeat;
+    padding:10px;
+}
+
+#product_comments_wrapper{
+    clear:both;
+    border:1px solid #F3F3F3;
+    border-top:none;
+	background:url(../images/categories_menu_bg_tab2.gif) no-repeat;
+    padding:10px;
+}
+
+#button_details{
+	width:210px; height:16px; /* 126 x 52 */
+}
+
+#button_comments{
+	width:180px; height:16px; /* 126 x 52 */
+}
+
+.button_active {
+	border:1px solid #F3F3F3;
+	border-bottom: none;
+	color:#90BB38;
+	font-weight:bold;
+	font-family: Segoe UI;
+	text-align:center;
+	padding:18px 0px;
+	float:left;
+	margin-right:3px;
+}
+
+.button_noactive {
+	border:1px solid #FFF;
+	border-bottom:none;
+	color:#636466;
+	font-weight:bold;
+	font-family: Segoe UI;
+	text-align:center;
+	padding:18px 0px;
+	float:left;
+	margin-right:3px;
+	background-color:#F9F9F9;
+}
+
+#map {
+	width:435px;
+	height:250px;
+}
+
+#map2 {
+	width: 650px;
+	height: 400px;
+}
+
+.error-message, .formErrors, #flashMessage {
+	color:red;
+}
+
+#flashMessage {
+	margin-top: 20px;
+}
+
+.form-error {
+	background-color:red;
+}
+
+#fancybox-wrap {
+	font-size: 12px;
+	font-family: Segoe UI;
+}
+
+.image_holder {
+	width: 50%;
+	float: left;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+ul#subproductsList {
+	list-style-type: none;
+}
+
+ul#subproductsList li.odd {
+	background-color: #C9F6AE;
+}
+
+table.top_headed{
+	font-size:12px;
+	color:#4F4F4F;
+	border:1px solid #000;
+	width: 100%;
+}
+
+table.top_headed th{
+	background-color:#000;
+	color:#FFF;
+	padding:5px;
+}
+
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	margin:0px;
+	padding:0px;
+}
+
+a img{
+	border:none;
+}
+
+fieldset{
+	color:#4F4F4F;
+	font-size:11px;
+}
+
+div#totalWrapper{
+	width:1219px;
+	margin:auto;
+}
+
+#topWrapMte{
+	background: url(http://www.mte.cz/images/top-background-mte.jpg) center top no-repeat;
+	height:296px;
+}
+
+#top {
+	width:1100px;
+	margin:auto;
+}
+
+#mainImage {
+	height: 295px;
+	width: 560px;
+	float:left;
+}
+
+#logo {
+	width: 200px; /*540*/
+	height: 54px; /*108 - 98*/
+	padding-top:45px;
+	padding-left:321px; 
+	float:left;
+	font-size:0px;
+}
+
+#users_login_box {
+	float:right;
+	width: 458px; /* 478 celkem */
+	height:147px; /* 167 celkem */
+	margin:23px 50px 0px 0px;
+	padding:10px;
+}
+
+#menuWrapMte{
+	background:url(http://www.mte.cz/images/menu-background-mte.jpg) center top no-repeat;
+	clear: both;
+}
+
+#menu {
+	width: 1100px;
+	height: 53px;
+	margin:auto;
+}
+
+#breadcrumbWrapMte{
+	background:url(http://www.mte.cz/images/breadcrumb-background-mte.jpg) center top no-repeat;
+}
+
+#breadcrumb {
+	width: 800px;
+	height: 20px;
+	padding:5px 0px 0px 300px;
+	font-size:11px;
+	text-align:left;
+	color:red;
+	margin:auto;
+}
+
+#breadcrumb a {
+	color:#09F;
+}
+
+#breadcrumb a:hover {
+	color:navy;
+}
+
+
+div#bodyContainerCenBack{
+	background:url(http://www.mte.cz/images/body-container-cen-back.jpg) center top repeat-y;
+}
+
+div#bodyContainerTopBackMte{
+	background:url(http://www.mte.cz/images/body-container-top-back.jpg) center top no-repeat;
+}
+
+div#bodyContainerBotBack{
+	background:url(http://www.mte.cz/images/body-container-bot-back.jpg) center bottom no-repeat;
+}
+
+div#contentWidth{
+	width:1024px;
+	margin:auto;
+	background:url(http://www.mte.cz/images/contentWidthTopBack-2.jpg) no-repeat;
+}
+
+div#leftMainSeparator{
+	background:url(http://www.mte.cz/images/leftColBackRepat.gif) left top repeat-y;
+	width:1024px;
+}
+
+div#leftColContainer{
+	float:left;
+	width:265px;
+}
+
+div#leftColContainer a.picto{
+	float:right;
+}
+
+div#leftColContainer a.boxTop{
+	display:block;
+	height:26px;
+	width:188px;
+	float:right;
+	font-size:15px;
+	padding-left:10px;
+	padding-top:5px;
+	color:#FFFFFF;
+	font-weight:bold;
+	text-decoration:none;
+	margin-top:3px;
+}
+
+div#leftColContainer a.boxTop:hover{
+	color:#000000;
+}
+
+div#leftColContainer a.first{
+	margin-top:0px;
+}
+
+a.menuBack{
+	background:url(http://www.mte.cz/images/box-top-menu.gif);
+}
+
+a.katalogBack{
+	background:url(/images/box-top-katalog.gif);
+}
+
+a.eshopBack{
+	background:url(http://www.mte.cz/images/box-top-eshop.gif);
+}
+
+div#leftColContainer div.boxWidthWrapper{
+	width:180px; /* celkem 198px */
+	float:left;
+	padding:9px 0px 9px 18px;
+	color: #4F4F4F;
+}
+
+div#leftColContainer ul.boxMenu{
+	text-align:left;
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+	padding:0px 7px 0px 0px;
+	background-color:#FFFFFF;
+	clear:both;
+}
+
+div#leftColContainer ul.boxMenu li{
+	line-height:22px;
+}
+
+div#leftColContainer ul.boxMenu li a{
+	color:navy;
+	font-size:11px;
+	text-decoration:none;
+}
+
+div#leftColContainer ul.boxMenu li a:hover{
+	color:blue;
+
+}
+
+div#leftColContainer ul.boxMenu li a.activeItem{
+	font-weight:bold;
+	color:red;
+}
+
+div#leftColContainer ul.boxMenu li a.mainLink{
+	font-weight:bold;
+}
+
+div#leftColContainer p{
+	font-size:11px;
+}
+
+#mainContainer {
+	width: 729px; /* 759 */
+	float: right;
+	padding:15px;
+}
+
+#mainContainer p{
+	padding:0px;
+	margin:0px;
+	text-align:justify;
+}
+
+div#footer {
+	background: url(http://www.mte.cz/images/footer-background-rlogo.jpg) center top no-repeat;
+	height:160px;
+}
+
+div#footerWrapper{
+	width:1024px;
+	margin:auto;
+}
+
+ul#address {
+	margin: 0px;
+	padding: 0px;
+	line-height:14px;
+	float:right;
+	padding:12px 16px 0px 0px;
+	
+}
+ul#address li {
+	font-family:Arial, Helvetica, sans-serif;
+	color:white;
+	font-size:12px;
+	font-weight:bold;
+	list-style-type:none;
+}
+
+a#kontaktyPiktogram{
+	float:right;
+	margin:13px 9px 0px 0px;
+}
+
+table.register th{
+	width:180px;
+	text-align:left;
+}
+
+table.left_headed th{
+	text-align:left;
+	font-size:12px;
+	padding:3px;
+	color:#4F4F4F;
+}
+
+table.left_headed td{
+	text-align:left;
+	font-size:12px;
+	padding:3px;
+	color:#4F4F4F;
+}
+
+table.top_headed{
+	font-size:12px;
+	color:#4F4F4F;
+	border:1px solid #000;
+}
+
+table.top_headed th{
+	background-color:#000;
+	color:#FFF;
+	padding:5px;
+}
+
+table#product_order_variants{
+	border:1px solid #72BF44;
+	font-size:12px;
+}
+
+table#product_order_variants th{
+	padding:10px;
+	background-color:#72BF44;
+	color:#FFF;
+}
+
+table#product_order_variants td{
+	padding:10px;
+}
+
+div#login_box{
+	font-size:12px;
+}
+
+div#menu_login span.login_notify{
+	color:red;
+	font-weight:bold;
+}
+
+div#login_box a{
+	color:blue;
+}
+
+div#login_box a:hover{
+	color:#000;
+	text-decoration:none;
+}
+
+div#flashMessage{
+	padding:10px;
+	border:1px solid red;
+	background:#FFF;
+	font-size:15px;
+	font-weight:bold;
+	color:red;
+}
+
+div.error-message{
+	font-size:10px;
+	color:red;
+	text-decoration:underline;
+}
+
+div#actual_order_stats{
+	padding-top:0px;
+}
+
+table.product_listing{
+	font-size:12px;
+}
+
+table.product_listing td.spec{
+	padding-bottom:25px;
+}
+
+table.product_listing th{
+	text-align:left;
+}
+
+table.product_listing th a{
+	color:blue;
+}
+
+table.product_listing th a:hover{
+	text-decoration:none;
+}
+
+table.product_listing th a.cart_button{
+	background:url(http://obchod.mte.cz/design-images/cart-button.gif);
+	width:57px;
+	height:18px;
+	display:block;
+	font-size:11px;
+	font-weight:normal;
+	text-decoration:none;
+	padding:5px 0px 0px 20px;
+	color:#000;
+}
+
+div.images_holder{
+	float:right;
+	width:400px;
+	text-align:center;
+}
+
+div.images_holder img{
+	border:1px solid silver;
+}
+
+div.images_holder div.thumbs_holder{
+	text-align:left;
+}

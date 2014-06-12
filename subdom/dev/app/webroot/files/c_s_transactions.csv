@@ -1,0 +1,7 @@
+CSTransactionItem.id;CSTransaction.code;BusinessPartner.name;CSTransaction.date_of_issue_day;CSTransaction.date_of_issue_month;CSTransaction.date_of_issue_year;CSTransaction.date_of_issue_time;CSTransactionItem.c_s_product_name;CSProduct.vzp_code;CSProduct.group_code;CSTransactionItem.quantity;CSTransactionItem.price;Unit.shortcut
+430;1201311001;MUDR. MARTIN SLAVÍK;21;11;2013;11:09:23;MOLICARE Premium Soft Super Medium;123;123;-8;391,11;bal.
+427;1201311001;MUDR. MARTIN SLAVÍK;21;11;2013;11:09:23;MOLIMED Air Active Micro (premium) ;123;123;-11;55,17;bal.
+431;1201311001;MUDR. MARTIN SLAVÍK;21;11;2013;11:09:23;MOLICARE Mobile Super Medium;123;123;-24;323,36;bal.
+428;1201311001;MUDR. MARTIN SLAVÍK;21;11;2013;11:09:23;MOLIMED Air Active Mini (premium) ;123;123;-18;62,86;bal.
+432;1201311001;MUDR. MARTIN SLAVÍK;21;11;2013;11:09:23;MOLICARE Mobile Medium;123;123;-47;263,30;bal.
+429;1201311001;MUDR. MARTIN SLAVÍK;21;11;2013;11:09:23;MOLIMED Air Active Midi (premium) ;123;123;-10;89,75;bal.

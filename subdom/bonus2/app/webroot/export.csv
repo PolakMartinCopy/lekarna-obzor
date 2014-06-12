@@ -1,0 +1,2 @@
+Customer.number;Customer.last_name;Customer.first_name;Customer.email;Customer.degree_before;Customer.degree_after;Customer.salutation;Customer.sex;Customer.street;Customer.zip;Customer.city;Customer.birth_certificate_number;RecommendingCustomer.name;Tariff.name;Customer.account
+105071;Lustigová;Andrea;andrea.lustigova@seznam.cz;;;;žena;Lidická 443;58822;Luka nad Jihlavou;9360114709;;A (standard);0,36

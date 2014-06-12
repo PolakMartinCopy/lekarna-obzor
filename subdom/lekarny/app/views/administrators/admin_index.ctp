@@ -1,0 +1,1 @@
+<h1>Hlavní stránka administrace</h1>

@@ -1,0 +1,7 @@
+CSTransactionItem.id;CSInvoice.code;BusinessPartner.name;CSInvoice.date_of_issue_day;CSInvoice.date_of_issue_month;CSInvoice.date_of_issue_year;CSInvoice.date_of_issue_time;CSInvoice.due_date_day;CSInvoice.due_date_month;CSInvoice.due_date_year;CSInvoice.code;CSInvoice.amount;Currency.shortcut;Product.id;ProductVariant.id;ProductVariant.exp;ProductVariant.lot;CSTransactionItem.product_name;Product.vzp_code;Product.group_code;Product.referential_number;CSTransactionItem.quantity;CSTransactionItem.price;Unit.shortcut;User.id;User.last_name
+497;120145001;MUDR. MARTIN SLAVÍK;16;05;2014;16:07:34;30;05;2014;120145001;18,00;CZK;;;;;asd456 inzulinove tablety;;;;3;3,00;;1;Polák
+498;120145001;MUDR. MARTIN SLAVÍK;16;05;2014;16:07:34;30;05;2014;120145001;18,00;CZK;;;;;boty pro diabetiky;;;;3;3,00;;1;Polák
+480;1201312003;Stradivari Trade d.o.o.;11;12;2013;16:51:50;25;12;2013;1201312003;40,00;CZK;14;5;;;MOLIMED Air Active Micro (premium) ;01134;X;;2;20,00;ks.;12;Klímová
+477;1201312002;Stradivari Trade d.o.o.;05;12;2013;10:37:18;01;01;2014;1201312002;10825,00;CZK;;;;;freestyle;;;;405;15,00;;12;Klímová
+478;1201312002;Stradivari Trade d.o.o.;05;12;2013;10:37:18;01;01;2014;1201312002;10825,00;CZK;;;;;verio;;;;500;9,50;;12;Klímová
+473;1201312001;MUDr. Kalinec  Aleš - Aledion Medical Centre spol. s r.o.;02;12;2013;15:42:17;16;12;2013;1201312001;2700,00;CZK;15;6;;;MOLIMED Air Active Mini (premium) ;134502;HVLP;;12;225,00;bal.;12;Klímová

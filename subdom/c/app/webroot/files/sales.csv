@@ -1,0 +1,158 @@
+ProductsTransaction.id;Sale.date_day;Sale.date_month;Sale.date_year;Sale.code;TransactionType.name;BusinessPartner.id;BusinessPartner.name;BusinessPartner.ico;Address.street;Address.number;Address.city;Address.zip;Address.region;Product.id;Product.name;Product.vzp_code;Product.group_code;ProductsTransaction.abs_quantity;ProductsTransaction.unit_price;ProductsTransaction.product_margin;ProductsTransaction.abs_total_price;Transaction.abs_margin;Unit.shortcut;User.id;TransactionType.id;TransactionType.name;User.last_name
+4231;15;05;2014;p1040;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;20;124,00;30,00;2480,00;744,00;bal.;11;3;prodej;Kramáø
+4233;15;05;2014;p1040;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;30;Tolura tbl.28x80mg;167673;HVLP;6;134,00;37,00;804,00;297,48;bal.;11;3;prodej;Kramáø
+4235;15;05;2014;p1040;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;71;Cezera tbl.30x5mg;124343;HVLP;1;118,00;37,00;118,00;43,66;bal.;11;3;prodej;Kramáø
+4237;15;05;2014;p1040;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;180;Emanera tbl. 90x20mg;0147921;HVLP;2;314,90;33,00;629,80;207,83;bal.;11;3;prodej;Kramáø
+4239;15;05;2014;p1040;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;149;Atordapin 10mg/10mg tbl 90 ;0189462;;3;885,00;20,00;2655,00;531,00;bal.;11;3;prodej;Kramáø
+4232;15;05;2014;p1040;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;13;376,00;31,00;4888,00;1515,28;bal.;11;3;prodej;Kramáø
+4234;15;05;2014;p1040;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;81;Cezera tbl.90x5mg;124346;HVLP;1;355,50;30,00;355,50;106,65;bal.;11;3;prodej;Kramáø
+4236;15;05;2014;p1040;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;33;Sorvasta tbl.28x10mg;184408;HVLP;10;121,00;37,00;1210,00;447,70;bal.;11;3;prodej;Kramáø
+4238;15;05;2014;p1040;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;1;629,00;24,00;629,00;150,96;bal.;11;3;prodej;Kramáø
+4224;14;05;2014;p1037;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;8;629,00;24,00;5032,00;1207,68;bal.;11;3;prodej;Kramáø
+4226;14;05;2014;p1037;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;1;124,00;30,00;124,00;37,20;bal.;11;3;prodej;Kramáø
+4225;14;05;2014;p1037;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;7;376,00;31,00;2632,00;815,92;bal.;11;3;prodej;Kramáø
+4118;12;05;2014;p1021;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;7;124,00;30,00;868,00;260,40;bal.;11;3;prodej;Kramáø
+4120;12;05;2014;p1021;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;61;Nolpaza tbl.84x40mg;109415;HVLP;2;293,00;24,00;586,00;140,64;bal.;11;3;prodej;Kramáø
+4117;12;05;2014;p1021;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;9;376,00;31,00;3384,00;1049,04;bal.;11;3;prodej;Kramáø
+4119;12;05;2014;p1021;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;71;Cezera tbl.30x5mg;124343;HVLP;4;118,00;37,00;472,00;174,64;bal.;11;3;prodej;Kramáø
+4121;12;05;2014;p1021;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;62;Sorvasta tbl.28x20mg;184452;HVLP;15;188,00;33,00;2820,00;930,60;bal.;11;3;prodej;Kramáø
+4116;12;05;2014;p1021;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;9;629,00;24,00;5661,00;1358,64;bal.;11;3;prodej;Kramáø
+4050;29;04;2014;p1007;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;81;Cezera tbl.90x5mg;124346;HVLP;3;355,50;30,00;1066,50;319,95;bal.;11;3;prodej;Kramáø
+4052;29;04;2014;p1007;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;180;Emanera tbl. 90x20mg;0147921;HVLP;5;314,90;33,00;1574,50;519,59;bal.;11;3;prodej;Kramáø
+4045;29;04;2014;p1007;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;40;376,00;31,00;15040,00;4662,40;bal.;11;3;prodej;Kramáø
+4054;29;04;2014;p1007;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;62;Sorvasta tbl.28x20mg;184452;HVLP;25;342,00;33,00;8550,00;2821,50;bal.;11;3;prodej;Kramáø
+4047;29;04;2014;p1007;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;29;124,00;30,00;3596,00;1078,80;bal.;11;3;prodej;Kramáø
+4056;29;04;2014;p1007;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;198;Sobycor tbl 30x2,5mg;0195986;HVLP;3;33,60;37,00;100,80;37,30;bal.;11;3;prodej;Kramáø
+4049;29;04;2014;p1007;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;149;Atordapin 10mg/10mg tbl 90 ;0189462;;2;885,00;20,00;1770,00;354,00;bal.;11;3;prodej;Kramáø
+4051;29;04;2014;p1007;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;71;Cezera tbl.30x5mg;124343;HVLP;1;118,00;37,00;118,00;43,66;bal.;11;3;prodej;Kramáø
+4053;29;04;2014;p1007;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;16;629,00;24,00;10064,00;2415,36;bal.;11;3;prodej;Kramáø
+4046;29;04;2014;p1007;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;30;Tolura tbl.28x80mg;167673;HVLP;2;134,00;37,00;268,00;99,16;bal.;11;3;prodej;Kramáø
+4055;29;04;2014;p1007;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;192;Sobycor tbl 30x5mg;0195996;HVLP;3;44,50;37,00;133,50;49,40;bal.;11;3;prodej;Kramáø
+4048;29;04;2014;p1007;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;184;Tolucombi tbl. 80mg/12.5mg;0193884;HVLP;16;129,50;37,00;2072,00;766,64;bal.;11;3;prodej;Kramáø
+3862;08;04;2014;p969;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;7;629,00;24,00;4403,00;1056,72;bal.;11;3;prodej;Kramáø
+3857;08;04;2014;p969;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;30;Tolura tbl.28x80mg;167673;HVLP;9;134,00;37,00;1206,00;446,22;bal.;11;3;prodej;Kramáø
+3859;08;04;2014;p969;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;36;124,00;30,00;4464,00;1339,20;bal.;11;3;prodej;Kramáø
+3861;08;04;2014;p969;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;180;Emanera tbl. 90x20mg;0147921;HVLP;1;314,90;33,00;314,90;103,92;bal.;11;3;prodej;Kramáø
+3863;08;04;2014;p969;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;184;Tolucombi tbl. 80mg/12.5mg;0193884;HVLP;2;129,50;37,00;259,00;95,83;bal.;11;3;prodej;Kramáø
+3856;08;04;2014;p969;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;51;402,00;33,00;20502,00;6765,66;bal.;11;3;prodej;Kramáø
+3858;08;04;2014;p969;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;149;Atordapin 10mg/10mg tbl 90 ;0189462;;1;885,00;20,00;885,00;177,00;bal.;11;3;prodej;Kramáø
+3860;08;04;2014;p969;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;81;Cezera tbl.90x5mg;124346;HVLP;2;413,00;33,00;826,00;272,58;bal.;11;3;prodej;Kramáø
+3806;25;03;2014;p955;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;180;Emanera tbl. 90x20mg;0147921;HVLP;3;314,90;33,00;944,70;311,75;bal.;11;3;prodej;Kramáø
+3808;25;03;2014;p955;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;55;124,00;30,00;6820,00;2046,00;bal.;11;3;prodej;Kramáø
+3803;25;03;2014;p955;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;184;Tolucombi tbl. 80mg/12.5mg;0193884;HVLP;31;129,50;37,00;4014,50;1485,37;bal.;11;3;prodej;Kramáø
+3805;25;03;2014;p955;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;35;402,00;33,00;14070,00;4643,10;bal.;11;3;prodej;Kramáø
+3807;25;03;2014;p955;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;18;629,00;24,00;11322,00;2717,28;bal.;11;3;prodej;Kramáø
+3804;25;03;2014;p955;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;30;Tolura tbl.28x80mg;167673;HVLP;19;134,00;37,00;2546,00;942,02;bal.;11;3;prodej;Kramáø
+3683;10;03;2014;p924;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;180;Emanera tbl. 90x20mg;0147921;HVLP;3;314,90;33,00;944,70;311,75;bal.;11;3;prodej;Kramáø
+3685;10;03;2014;p924;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;23;124,00;30,00;2852,00;855,60;bal.;11;3;prodej;Kramáø
+3682;10;03;2014;p924;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;3;629,00;24,00;1887,00;452,88;bal.;11;3;prodej;Kramáø
+3684;10;03;2014;p924;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;12;402,00;33,00;4824,00;1591,92;bal.;11;3;prodej;Kramáø
+3686;10;03;2014;p924;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;71;Cezera tbl.30x5mg;124343;HVLP;3;118,00;37,00;354,00;130,98;bal.;11;3;prodej;Kramáø
+3681;10;03;2014;p924;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;184;Tolucombi tbl. 80mg/12.5mg;0193884;HVLP;24;129,50;37,00;3108,00;1149,96;bal.;11;3;prodej;Kramáø
+3623;04;03;2014;p911;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;23;629,00;24,00;14467,00;3472,08;bal.;11;3;prodej;Kramáø
+3625;04;03;2014;p911;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;164;Tolura tbl 28x40mg;0167666;HVLP;1;100,63;37,00;100,63;37,23;bal.;11;3;prodej;Kramáø
+3627;04;03;2014;p911;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;81;Cezera tbl.90x5mg;124346;HVLP;2;413,00;33,00;826,00;272,58;bal.;11;3;prodej;Kramáø
+3624;04;03;2014;p911;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;41;124,00;30,00;5084,00;1525,20;bal.;11;3;prodej;Kramáø
+3626;04;03;2014;p911;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;25;402,00;33,00;10050,00;3316,50;bal.;11;3;prodej;Kramáø
+3436;20;02;2014;d884;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;25;402,00;33,00;10050,00;3316,50;bal.;11;3;prodej;Kramáø
+3431;20;02;2014;d884;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;184;Tolucombi tbl. 80mg/12.5mg;0193884;HVLP;50;129,50;37,00;6475,00;2395,75;bal.;11;3;prodej;Kramáø
+3433;20;02;2014;d884;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;180;Emanera tbl. 90x20mg;0147921;HVLP;4;314,90;33,00;1259,60;415,67;bal.;11;3;prodej;Kramáø
+3435;20;02;2014;d884;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;149;Atordapin 10mg/10mg tbl 90 ;0189462;;2;885,00;20,00;1770,00;354,00;bal.;11;3;prodej;Kramáø
+3437;20;02;2014;d884;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;164;Tolura tbl 28x40mg;0167666;HVLP;20;100,63;37,00;2012,60;744,66;bal.;11;3;prodej;Kramáø
+3432;20;02;2014;d884;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;16;629,00;24,00;10064,00;2415,36;bal.;11;3;prodej;Kramáø
+3434;20;02;2014;d884;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;12;124,00;30,00;1488,00;446,40;bal.;11;3;prodej;Kramáø
+3379;07;02;2014;d873;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;13;402,00;33,00;5226,00;1724,58;bal.;11;3;prodej;Kramáø
+3348;04;02;2014;d864;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;21;124,00;30,00;2604,00;781,20;bal.;11;3;prodej;Kramáø
+3204;31;01;2014;d852;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;71;Cezera tbl.30x5mg;124343;HVLP;7;118,00;37,00;826,00;305,62;bal.;11;3;prodej;Kramáø
+3206;31;01;2014;d852;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;18;402,00;33,00;7236,00;2387,88;bal.;11;3;prodej;Kramáø
+3208;31;01;2014;d852;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;149;Atordapin 10mg/10mg tbl 90 ;0189462;;1;885,00;20,00;885,00;177,00;bal.;11;3;prodej;Kramáø
+3203;31;01;2014;d852;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;5;124,00;30,00;620,00;186,00;bal.;11;3;prodej;Kramáø
+3205;31;01;2014;d852;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;184;Tolucombi tbl. 80mg/12.5mg;0193884;HVLP;3;129,50;37,00;388,50;143,75;bal.;11;3;prodej;Kramáø
+3207;31;01;2014;d852;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;9;629,00;24,00;5661,00;1358,64;bal.;11;3;prodej;Kramáø
+2887;21;01;2014;d833;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;81;Cezera tbl.90x5mg;124346;HVLP;3;413,00;33,00;1239,00;408,87;bal.;11;3;prodej;Kramáø
+2889;21;01;2014;d833;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;3;124,00;30,00;372,00;111,60;bal.;11;3;prodej;Kramáø
+2888;21;01;2014;d833;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;71;Cezera tbl.30x5mg;124343;HVLP;10;118,00;37,00;1180,00;436,60;bal.;11;3;prodej;Kramáø
+2846;17;01;2014;d826;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;1;629,00;24,00;629,00;150,96;bal.;11;3;prodej;Kramáø
+2848;17;01;2014;d826;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;61;Nolpaza tbl.84x40mg;109415;HVLP;1;293,00;24,00;293,00;70,32;bal.;11;3;prodej;Kramáø
+2850;17;01;2014;d826;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;28;402,00;33,00;11256,00;3714,48;bal.;11;3;prodej;Kramáø
+2847;17;01;2014;d826;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;149;Atordapin 10mg/10mg tbl 90 ;0189462;;1;885,00;20,00;885,00;177,00;bal.;11;3;prodej;Kramáø
+2849;17;01;2014;d826;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;9;124,00;30,00;1116,00;334,80;bal.;11;3;prodej;Kramáø
+2717;23;12;2013;d798;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;149;Atordapin 10mg/10mg tbl 90 ;0189462;;3;885,00;20,00;2655,00;531,00;bal.;11;3;prodej;Kramáø
+2712;23;12;2013;d798;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;51;124,00;30,00;6324,00;1897,20;bal.;11;3;prodej;Kramáø
+2714;23;12;2013;d798;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;44;402,00;33,00;17688,00;5837,04;bal.;11;3;prodej;Kramáø
+2716;23;12;2013;d798;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;61;Nolpaza tbl.84x40mg;109415;HVLP;17;293,00;24,00;4981,00;1195,44;bal.;11;3;prodej;Kramáø
+2718;23;12;2013;d798;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;2;629,00;24,00;1258,00;301,92;bal.;11;3;prodej;Kramáø
+2713;23;12;2013;d798;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;81;Cezera tbl.90x5mg;124346;HVLP;5;413,00;33,00;2065,00;681,45;bal.;11;3;prodej;Kramáø
+2715;23;12;2013;d798;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;164;Tolura tbl 28x40mg;0167666;HVLP;21;100,63;37,00;2113,23;781,90;bal.;11;3;prodej;Kramáø
+2491;04;12;2013;d760;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;5;402,00;33,00;2010,00;663,30;bal.;11;3;prodej;Kramáø
+2429;28;11;2013;d740;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;149;Atordapin 10mg/10mg tbl 90 ;0189462;;1;885,00;20,00;885,00;177,00;bal.;11;3;prodej;Kramáø
+2422;28;11;2013;d740;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;164;Tolura tbl 28x40mg;0167666;HVLP;8;100,63;37,00;805,04;297,86;bal.;11;3;prodej;Kramáø
+2424;28;11;2013;d740;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;71;Cezera tbl.30x5mg;124343;HVLP;7;118,00;37,00;826,00;305,62;bal.;11;3;prodej;Kramáø
+2426;28;11;2013;d740;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;67;124,00;30,00;8308,00;2492,40;bal.;11;3;prodej;Kramáø
+2428;28;11;2013;d740;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;61;Nolpaza tbl.84x40mg;109415;HVLP;4;293,00;24,00;1172,00;281,28;bal.;11;3;prodej;Kramáø
+2421;28;11;2013;d740;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;59;402,00;33,00;23718,00;7826,94;bal.;11;3;prodej;Kramáø
+2423;28;11;2013;d740;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;62;Sorvasta tbl.28x20mg;184452;HVLP;2;342,00;33,00;684,00;225,72;bal.;11;3;prodej;Kramáø
+2425;28;11;2013;d740;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;81;Cezera tbl.90x5mg;124346;HVLP;7;413,00;33,00;2891,00;954,03;bal.;11;3;prodej;Kramáø
+2427;28;11;2013;d740;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;9;629,00;24,00;5661,00;1358,64;bal.;11;3;prodej;Kramáø
+2268;13;11;2013;d709;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;10;629,00;24,00;6290,00;1509,60;bal.;11;3;prodej;Kramáø
+2051;31;10;2013;p669;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;62;Sorvasta tbl.28x20mg;184452;HVLP;23;342,00;33,00;7866,00;2595,78;bal.;11;3;prodej;Kramáø
+2053;31;10;2013;p669;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;10;135,00;30,00;1350,00;405,00;bal.;11;3;prodej;Kramáø
+2055;31;10;2013;p669;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;12;530,10;24,00;6361,20;1526,69;bal.;11;3;prodej;Kramáø
+2057;31;10;2013;p669;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;61;Nolpaza tbl.84x40mg;109415;HVLP;8;494,00;24,00;3952,00;948,48;bal.;11;3;prodej;Kramáø
+2052;31;10;2013;p669;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;29;402,00;33,00;11658,00;3847,14;bal.;11;3;prodej;Kramáø
+2054;31;10;2013;p669;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;71;Cezera tbl.30x5mg;124343;HVLP;5;137,00;37,00;685,00;253,45;bal.;11;3;prodej;Kramáø
+2056;31;10;2013;p669;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;149;Atordapin 10mg/10mg tbl 90 ;0189462;;3;885,00;20,00;2655,00;531,00;bal.;11;3;prodej;Kramáø
+1949;21;10;2013;p639;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;164;Tolura tbl 28x40mg;0167666;HVLP;7;100,63;37,00;704,41;260,63;bal.;11;3;prodej;Kramáø
+1951;21;10;2013;p639;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;81;Cezera tbl.90x5mg;124346;HVLP;8;413,00;33,00;3304,00;1090,32;bal.;11;3;prodej;Kramáø
+1953;21;10;2013;p639;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;102;135,00;30,00;13770,00;4131,00;bal.;11;3;prodej;Kramáø
+1955;21;10;2013;p639;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;62;Sorvasta tbl.28x20mg;184452;HVLP;20;342,00;33,00;6840,00;2257,20;bal.;11;3;prodej;Kramáø
+1948;21;10;2013;p639;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;30;402,00;33,00;12060,00;3979,80;bal.;11;3;prodej;Kramáø
+1950;21;10;2013;p639;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;61;Nolpaza tbl.84x40mg;109415;HVLP;6;494,00;24,00;2964,00;711,36;bal.;11;3;prodej;Kramáø
+1952;21;10;2013;p639;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;71;Cezera tbl.30x5mg;124343;HVLP;8;137,00;37,00;1096,00;405,52;bal.;11;3;prodej;Kramáø
+1954;21;10;2013;p639;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;23;530,10;24,00;12192,30;2926,15;bal.;11;3;prodej;Kramáø
+1671;27;09;2013;d602;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;149;Atordapin 10mg/10mg tbl 90 ;0189462;;2;885,00;20,00;1770,00;354,00;bal.;11;3;prodej;Kramáø
+1664;27;09;2013;d602;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;144;Emanera cps 90x40mg;0147933;HVLP;12;530,10;24,00;6361,20;1526,69;bal.;11;3;prodej;Kramáø
+1666;27;09;2013;d602;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;44;402,00;33,00;17688,00;5837,04;bal.;11;3;prodej;Kramáø
+1668;27;09;2013;d602;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;62;Sorvasta tbl.28x20mg;184452;HVLP;13;342,00;33,00;4446,00;1467,18;bal.;11;3;prodej;Kramáø
+1670;27;09;2013;d602;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;81;Cezera tbl.90x5mg;124346;HVLP;2;413,00;33,00;826,00;272,58;bal.;11;3;prodej;Kramáø
+1665;27;09;2013;d602;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;48;135,00;30,00;6480,00;1944,00;bal.;11;3;prodej;Kramáø
+1667;27;09;2013;d602;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;61;Nolpaza tbl.84x40mg;109415;HVLP;7;494,00;24,00;3458,00;829,92;bal.;11;3;prodej;Kramáø
+1669;27;09;2013;d602;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;33;Sorvasta tbl.28x10mg;184408;HVLP;10;222,00;37,00;2220,00;821,40;bal.;11;3;prodej;Kramáø
+1898;10;09;2013;p567;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;47;135,00;30,00;6345,00;1903,50;bal.;11;3;prodej;Kramáø
+1893;10;09;2013;p567;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;62;Sorvasta tbl.28x20mg;184452;HVLP;7;342,00;33,00;2394,00;790,02;bal.;11;3;prodej;Kramáø
+1895;10;09;2013;p567;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;30;Tolura tbl.28x80mg;167673;HVLP;8;134,00;37,00;1072,00;396,64;bal.;11;3;prodej;Kramáø
+1897;10;09;2013;p567;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;61;Nolpaza tbl.84x40mg;109415;HVLP;2;494,00;24,00;988,00;237,12;bal.;11;3;prodej;Kramáø
+1892;10;09;2013;p567;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;33;Sorvasta tbl.28x10mg;184408;HVLP;37;222,00;37,00;8214,00;3039,18;bal.;11;3;prodej;Kramáø
+1894;10;09;2013;p567;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;14;402,00;33,00;5628,00;1857,24;bal.;11;3;prodej;Kramáø
+1896;10;09;2013;p567;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;81;Cezera tbl.90x5mg;124346;HVLP;2;413,00;33,00;826,00;272,58;bal.;11;3;prodej;Kramáø
+1314;23;08;2013;p516;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;4;402,00;33,00;1608,00;530,64;bal.;11;3;prodej;Kramáø
+1311;23;08;2013;p516;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;33;135,00;30,00;4455,00;1336,50;bal.;11;3;prodej;Kramáø
+1313;23;08;2013;p516;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;33;Sorvasta tbl.28x10mg;184408;HVLP;13;222,00;37,00;2886,00;1067,82;bal.;11;3;prodej;Kramáø
+1315;23;08;2013;p516;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;61;Nolpaza tbl.84x40mg;109415;HVLP;4;494,00;24,00;1976,00;474,24;bal.;11;3;prodej;Kramáø
+1312;23;08;2013;p516;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;81;Cezera tbl.90x5mg;124346;HVLP;3;413,00;33,00;1239,00;408,87;bal.;11;3;prodej;Kramáø
+1114;30;07;2013;p478;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;62;Sorvasta tbl.28x20mg;184452;HVLP;9;342,00;33,00;3078,00;1015,74;bal.;11;3;prodej;Kramáø
+1116;30;07;2013;p478;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;17;402,00;33,00;6834,00;2255,22;bal.;11;3;prodej;Kramáø
+1113;30;07;2013;p478;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;61;Nolpaza tbl.84x40mg;109415;HVLP;11;494,00;24,00;5434,00;1304,16;bal.;11;3;prodej;Kramáø
+1115;30;07;2013;p478;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;33;Sorvasta tbl.28x10mg;184408;HVLP;6;222,00;37,00;1332,00;492,84;bal.;11;3;prodej;Kramáø
+1117;30;07;2013;p478;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;30;Tolura tbl.28x80mg;167673;HVLP;2;134,00;37,00;268,00;99,16;bal.;11;3;prodej;Kramáø
+878;10;07;2013;p413;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;62;Sorvasta tbl.28x20mg;184452;HVLP;40;342,00;33,00;13680,00;4514,40;bal.;11;3;prodej;Kramáø
+880;10;07;2013;p413;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;15;135,00;30,00;2025,00;607,50;bal.;11;3;prodej;Kramáø
+877;10;07;2013;p413;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;33;Sorvasta tbl.28x10mg;184408;HVLP;30;222,00;37,00;6660,00;2464,20;bal.;11;3;prodej;Kramáø
+879;10;07;2013;p413;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;11;402,00;33,00;4422,00;1459,26;bal.;11;3;prodej;Kramáø
+881;10;07;2013;p413;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;61;Nolpaza tbl.84x40mg;109415;HVLP;6;494,00;24,00;2964,00;711,36;bal.;11;3;prodej;Kramáø
+863;26;06;2013;p411;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;13;402,00;33,00;5226,00;1724,58;bal.;11;3;prodej;Kramáø
+865;26;06;2013;p411;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;59;Sorvasta tbl.28x15mg;184397;HVLP;9;286,00;33,00;2574,00;849,42;bal.;11;3;prodej;Kramáø
+864;26;06;2013;p411;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;9;135,00;30,00;1215,00;364,50;bal.;11;3;prodej;Kramáø
+860;13;06;2013;p410;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;62;Sorvasta tbl.28x20mg;184452;HVLP;21;342,00;33,00;7182,00;2370,06;bal.;11;3;prodej;Kramáø
+862;13;06;2013;p410;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;33;Sorvasta tbl.28x10mg;184408;HVLP;42;222,00;37,00;9324,00;3449,88;bal.;11;3;prodej;Kramáø
+859;13;06;2013;p410;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;5;402,00;33,00;2010,00;663,30;bal.;11;3;prodej;Kramáø
+861;13;06;2013;p410;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;63;Azibiot tbl.3x500mg;142164;HVLP;36;135,00;30,00;4860,00;1458,00;bal.;11;3;prodej;Kramáø
+856;05;06;2013;p409;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;15;402,00;33,00;6030,00;1989,90;bal.;11;3;prodej;Kramáø
+858;05;06;2013;p409;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;59;Sorvasta tbl.28x15mg;184397;HVLP;6;286,00;33,00;1716,00;566,28;bal.;11;3;prodej;Kramáø
+857;05;06;2013;p409;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;62;Sorvasta tbl.28x20mg;184452;HVLP;24;342,00;33,00;8208,00;2708,64;bal.;11;3;prodej;Kramáø
+855;30;05;2013;p408;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;7;402,00;33,00;2814,00;928,62;bal.;11;3;prodej;Kramáø
+854;29;05;2013;p407;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;2;402,00;33,00;804,00;265,32;bal.;11;3;prodej;Kramáø
+853;21;05;2013;p406;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;62;Sorvasta tbl.28x20mg;184452;HVLP;15;342,00;33,00;5130,00;1692,90;bal.;11;3;prodej;Kramáø
+852;21;05;2013;p406;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;29;Tolura tbl.84x80mg;167676;HVLP;13;402,00;33,00;5226,00;1724,58;bal.;11;3;prodej;Kramáø
+851;15;05;2013;p405;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;62;Sorvasta tbl.28x20mg;184452;HVLP;6;342,00;33,00;2052,00;677,16;bal.;11;3;prodej;Kramáø
+850;15;05;2013;p405;prodej;157;Karlík KRKA;00000000;Sokolovská;79/192;Praha;18600;;61;Nolpaza tbl.84x40mg;109415;HVLP;4;494,00;24,00;1976,00;474,24;bal.;11;3;prodej;Kramáø

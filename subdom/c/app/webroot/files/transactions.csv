@@ -1,0 +1,53 @@
+ProductsTransaction.id;Transaction.date_day;Transaction.date_month;Transaction.date_year;Transaction.code;TransactionType.name;BusinessPartner.id;BusinessPartner.name;BusinessPartner.ico;Address.street;Address.number;Address.city;Address.zip;Address.region;Product.id;Product.name;Product.vzp_code;Product.group_code;ProductsTransaction.quantity;ProductsTransaction.unit_price;ProductsTransaction.product_margin;ProductsTransaction.total_price;Transaction.margin;Unit.shortcut;User.id;TransactionType.id;TransactionType.name;User.last_name
+3845;04;04;2014;p966;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;92;Canocord tbl.28x16mg;175280;HVLP;-28;134,00;35,00;-3752,00;-1313,20;bal.;11;3;prodej;Kramáø
+3847;04;04;2014;p966;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;98;Tonarssa 4mg/5mg tbl.90;187793;HVLP;-12;333,00;31,00;-3996,00;-1238,76;bal.;11;3;prodej;Kramáø
+3849;04;04;2014;p966;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;60;Atoris tbl.30x30mg;166470;HVLP;-12;168,00;33,00;-2016,00;-665,28;bal.;11;3;prodej;Kramáø
+3846;04;04;2014;p966;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;149;Atordapin 10mg/10mg tbl 90 ;0189462;;-2;885,00;20,00;-1770,00;-354,00;bal.;11;3;prodej;Kramáø
+3848;04;04;2014;p966;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;58;Atoris tbl.90x20mg;49009;HVLP;-8;391,00;24,00;-3128,00;-750,72;bal.;11;3;prodej;Kramáø
+3666;06;03;2014;p919;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;58;Atoris tbl.90x20mg;49009;HVLP;-8;391,00;24,00;-3128,00;-750,72;bal.;11;3;prodej;Kramáø
+3668;06;03;2014;p919;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;98;Tonarssa 4mg/5mg tbl.90;187793;HVLP;-2;333,00;31,00;-666,00;-206,46;bal.;11;3;prodej;Kramáø
+3667;06;03;2014;p919;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;60;Atoris tbl.30x30mg;166470;HVLP;-10;168,00;33,00;-1680,00;-554,40;bal.;11;3;prodej;Kramáø
+3669;06;03;2014;p919;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;92;Canocord tbl.28x16mg;175280;HVLP;-24;134,00;35,00;-3216,00;-1125,60;bal.;11;3;prodej;Kramáø
+3593;03;03;2014;d904;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;92;Canocord tbl.28x16mg;175280;HVLP;60;134,00;35,00;8040,00;2814,00;bal.;11;1;dodací list;Kramáø
+3581;28;02;2014;d901;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;58;Atoris tbl.90x20mg;49009;HVLP;40;391,00;24,00;15640,00;3753,60;bal.;11;1;dodací list;Kramáø
+3580;28;02;2014;d901;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;98;Tonarssa 4mg/5mg tbl.90;187793;HVLP;30;333,00;31,00;9990,00;3096,90;bal.;11;1;dodací list;Kramáø
+3576;27;02;2014;p900;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;60;Atoris tbl.30x30mg;166470;HVLP;-20;168,00;33,00;-3360,00;-1108,80;bal.;11;3;prodej;Kramáø
+3578;27;02;2014;p900;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;98;Tonarssa 4mg/5mg tbl.90;187793;HVLP;-2;333,00;31,00;-666,00;-206,46;bal.;11;3;prodej;Kramáø
+3577;27;02;2014;p900;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;92;Canocord tbl.28x16mg;175280;HVLP;-20;134,00;35,00;-2680,00;-938,00;bal.;11;3;prodej;Kramáø
+3579;27;02;2014;p900;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;58;Atoris tbl.90x20mg;49009;HVLP;-12;391,00;24,00;-4692,00;-1126,08;bal.;11;3;prodej;Kramáø
+3237;04;02;2014;d860;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;98;Tonarssa 4mg/5mg tbl.90;187793;HVLP;20;333,00;31,00;6660,00;2064,60;bal.;11;1;dodací list;Kramáø
+3222;31;01;2014;d858;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;92;Canocord tbl.28x16mg;175280;HVLP;60;134,00;35,00;8040,00;2814,00;bal.;11;1;dodací list;Kramáø
+3224;31;01;2014;d858;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;60;Atoris tbl.30x30mg;166470;HVLP;15;168,00;33,00;2520,00;831,60;bal.;11;1;dodací list;Kramáø
+3223;31;01;2014;d858;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;188;Canocord tbl. 28x8mg;0175272;;HVLP;3;100,60;37,00;301,80;111,67;bal.;11;1;dodací list;Kramáø
+3213;31;01;2014;p855;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;98;Tonarssa 4mg/5mg tbl.90;187793;HVLP;-18;333,00;31,00;-5994,00;-1858,14;bal.;11;3;prodej;Kramáø
+3214;31;01;2014;p855;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;92;Canocord tbl.28x16mg;175280;HVLP;-28;134,00;35,00;-3752,00;-1313,20;bal.;11;3;prodej;Kramáø
+2705;23;12;2013;p794;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;92;Canocord tbl.28x16mg;175280;HVLP;-36;134,00;35,00;-4824,00;-1688,40;bal.;11;3;prodej;Kramáø
+2456;29;11;2013;p748;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;167;Zyllt tbl 28x75mg;0149480;HVLP;-14;387,20;33,00;-5420,80;-1788,86;bal.;11;3;prodej;Kramáø
+2367;20;11;2013;p726;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;92;Canocord tbl.28x16mg;175280;HVLP;-40;134,00;35,00;-5360,00;-1876,00;bal.;11;3;prodej;Kramáø
+2086;31;10;2013;p674;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;166;Atoris tbl. 30x60mg;166473;HVLP;-1;472,50;24,00;-472,50;-113,40;bal.;11;3;prodej;Kramáø
+2085;31;10;2013;p674;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;167;Zyllt tbl 28x75mg;0149480;HVLP;-16;387,20;33,00;-6195,20;-2044,42;bal.;11;3;prodej;Kramáø
+2042;30;10;2013;d664;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;167;Zyllt tbl 28x75mg;0149480;HVLP;5;387,20;33,00;1936,00;638,88;bal.;11;1;dodací list;Kramáø
+1988;29;10;2013;d651;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;167;Zyllt tbl 28x75mg;0149480;HVLP;25;387,20;33,00;9680,00;3194,40;bal.;11;1;dodací list;Kramáø
+1941;17;10;2013;p634;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;166;Atoris tbl. 30x60mg;166473;HVLP;-20;472,50;24,00;-9450,00;-2268,00;bal.;11;3;prodej;Kramáø
+1940;17;10;2013;p634;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;167;Zyllt tbl 28x75mg;0149480;HVLP;-20;387,20;33,00;-7744,00;-2555,52;bal.;11;3;prodej;Kramáø
+1942;17;10;2013;p634;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;60;Atoris tbl.30x30mg;166470;HVLP;-1;307,00;33,00;-307,00;-101,31;bal.;11;3;prodej;Kramáø
+1936;16;10;2013;d632;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;167;Zyllt tbl 28x75mg;0149480;HVLP;10;387,20;33,00;3872,00;1277,76;bal.;11;1;dodací list;Kramáø
+1920;16;10;2013;p629;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;92;Canocord tbl.28x16mg;175280;HVLP;-20;134,00;35,00;-2680,00;-938,00;bal.;11;3;prodej;Kramáø
+1875;15;10;2013;d621;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;167;Zyllt tbl 28x75mg;0149480;HVLP;10;387,20;33,00;3872,00;1277,76;bal.;11;1;dodací list;Kramáø
+1856;11;10;2013;p618;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;92;Canocord tbl.28x16mg;175280;HVLP;-24;134,00;35,00;-3216,00;-1125,60;bal.;11;3;prodej;Kramáø
+1858;11;10;2013;p618;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;149;Atordapin 10mg/10mg tbl 90 ;0189462;;-2;885,00;20,00;-1770,00;-354,00;bal.;11;3;prodej;Kramáø
+1857;11;10;2013;p618;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;60;Atoris tbl.30x30mg;166470;HVLP;-1;307,00;33,00;-307,00;-101,31;bal.;11;3;prodej;Kramáø
+1859;11;10;2013;p618;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;167;Zyllt tbl 28x75mg;0149480;HVLP;-10;387,20;33,00;-3872,00;-1277,76;bal.;11;3;prodej;Kramáø
+1724;03;10;2013;p609;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;167;Zyllt tbl 28x75mg;0149480;HVLP;-10;387,20;33,00;-3872,00;-1277,76;bal.;11;3;prodej;Kramáø
+1725;03;10;2013;p609;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;60;Atoris tbl.30x30mg;166470;HVLP;-12;307,00;33,00;-3684,00;-1215,72;bal.;11;3;prodej;Kramáø
+1711;02;10;2013;d606;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;167;Zyllt tbl 28x75mg;0149480;HVLP;20;387,20;33,00;7744,00;2555,52;bal.;11;1;dodací list;Kramáø
+1712;02;10;2013;d606;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;166;Atoris tbl. 30x60mg;166473;HVLP;9;472,50;24,00;4252,50;1020,60;bal.;11;1;dodací list;Kramáø
+1652;27;09;2013;d599;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;98;Tonarssa 4mg/5mg tbl.90;187793;HVLP;20;333,00;31,00;6660,00;2064,60;bal.;11;1;dodací list;Kramáø
+1654;27;09;2013;d599;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;166;Atoris tbl. 30x60mg;166473;HVLP;12;472,50;24,00;5670,00;1360,80;bal.;11;1;dodací list;Kramáø
+1653;27;09;2013;d599;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;92;Canocord tbl.28x16mg;175280;HVLP;60;134,00;35,00;8040,00;2814,00;bal.;11;1;dodací list;Kramáø
+1486;06;09;2013;p560;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;92;Canocord tbl.28x16mg;175280;HVLP;-8;134,00;35,00;-1072,00;-375,20;bal.;11;3;prodej;Kramáø
+1485;06;09;2013;p559;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;60;Atoris tbl.30x30mg;166470;HVLP;-21;307,00;33,00;-6447,00;-2127,51;bal.;11;3;prodej;Kramáø
+1453;05;09;2013;d550;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;149;Atordapin 10mg/10mg tbl 90 ;0189462;;15;885,00;20,00;13275,00;2655,00;bal.;11;1;dodací list;Kramáø
+1452;05;09;2013;d549;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;92;Canocord tbl.28x16mg;175280;HVLP;90;134,00;35,00;12060,00;4221,00;bal.;11;1;dodací list;Kramáø
+1343;27;08;2013;p521;prodej;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;60;Atoris tbl.30x30mg;166470;HVLP;-55;307,00;33,00;-16885,00;-5572,05;bal.;11;3;prodej;Kramáø
+831;19;06;2013;d396;dodací list;159;Vassová KRKA;00000000;Sokolovská;79/192;Praha;18600;;60;Atoris tbl.30x30mg;166470;HVLP;90;307,00;33,00;27630,00;9117,90;bal.;11;1;dodací list;Kramáø
