@@ -39,13 +39,6 @@ if ($_SERVER['REQUEST_URI'] == '/admin' || $_SERVER['REQUEST_URI'] == '/admin/')
 	exit();
 }
 
-// kontrola, jestli jedeme pres spravny host name
-if ( $_SERVER['HTTP_HOST'] != 'www.lekarna-obzor.cz'){
-	header("HTTP/1.1 301 Moved Permanently");
-	header("Location: http://www.lekarna-obzor.cz" . $_SERVER['REQUEST_URI']);
-	exit();
-}
-
 	Router::connect('/', array('controller' => 'contents', 'action' => 'view', 1));
 	Router::connect('/kosik', array('controller' => 'carts_products', 'action' => 'index'));
 	Router::connect('/vysypat-kosik', array('controller' => 'carts', 'action' => 'dump'));
@@ -53,6 +46,7 @@ if ( $_SERVER['HTTP_HOST'] != 'www.lekarna-obzor.cz'){
 	Router::connect('/vyhledavani-produktu', array('controller' => 'searches', 'action' => 'do_search'));
 	Router::connect('/registrace', array('controller' => 'customers', 'action' => 'add'));
 	Router::connect('/obnova-hesla', array('controller' => 'customers', 'action' => 'password'));
+	Router::connect('/objednavka-leku-na-predpis', array('controller' => 'forms', 'action' => 'prescription_only_medicine'));
 
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
