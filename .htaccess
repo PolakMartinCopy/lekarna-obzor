@@ -9,6 +9,9 @@
 
 RewriteEngine On
 
+RewriteCond %{HTTP_HOST} ^lekarna-obzor.cz
+RewriteRule (.*) http://www.lekarna-obzor.cz/$1 [R=301,QSA,L] 
+
 # cele domeny (aliasy)
 RewriteCond %{REQUEST_URI} !^domains/
 RewriteCond %{REQUEST_URI} !^/domains/
