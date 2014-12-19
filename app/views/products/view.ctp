@@ -1,11 +1,14 @@
 <div id="product_detail">
 	<?php if (!empty($product['Image'])) { ?>
-	<div id="main_image">
+	<div id="main_image" style="height:270px;width:270px;">
 		<a href="/product-images/<?php echo $product['Image'][0]['name']?>" title="<?php echo $product['Product']['name'] ?>" class="thickbox">
 			<img src="/product-images/medium/<?php echo $product['Image'][0]['name']?>" width="270px" height="270px" alt="produkt <?php echo $product['Product']['name'] ?>" />
 		</a>
 	</div>
 	<?php } ?>
+	<div style="border: 5px solid #A5CF4E;padding:5px;font-size:14px;width:641px;margin-top:5px;float:left">
+		<p>Dovolujeme si upozornit naše zákazníky, že objednávky zpracované od 12.00 hod. 23.12.2014 budou expedovány 2.1.2015. Děkujeme za pochopení.</p>
+	</div>
 
 	<h1><?php echo $product['Product']['heading']?></h1>
 	
@@ -163,8 +166,8 @@
 					<p>za <em><?php echo CUST_NAME?></em><br /><?php echo $comment['Administrator']['first_name']?> <?php echo $comment['Administrator']['last_name']?></p>
 				</div>
 			<?php } ?>
+		<?php } ?>
 		</div>
-		<?php }
-		} ?>
+		<?php } ?>
 	</div>
 </div>
