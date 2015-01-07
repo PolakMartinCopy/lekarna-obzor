@@ -68,7 +68,7 @@
 					
 						echo '<tr>
 							<th colspan="2" align="right">cena za zboží celkem:</td>
-							<td colspan="2" align="right"><strong>' . intval($final_price) . ' Kč</strong><br /><span style="font-size:10px">(' . round($final_price_wout, 2) . ' Kč<br />bez DPH)</span></td>
+							<td colspan="2" align="right"><strong>' . intval($final_price) . ' Kč</strong></td>
 						</tr>';
 						
 						// pokud cena objednavky neprekroci dopravu zdarma

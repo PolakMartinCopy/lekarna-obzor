@@ -38,10 +38,12 @@
 		<div class="menu_spacer"></div>
 		<div id="content" class="left">
 			<?php echo $this->element('search_box')?>
-			<div class="menu_spacer"></div>
+<!--
+ 			<div class="menu_spacer"></div>
 			<div style="border: 5px solid #A5CF4E;padding:5px;font-size:14px">
 				<p>Dovolujeme si upozornit naše zákazníky, že objednávky zpracované od 12.00 hod. 23.12.2014 budou expedovány 2.1.2015. Děkujeme za pochopení.</p>
 			</div>
+ -->
 			<div class="menu_spacer"></div>
 			<?php
 			if ($this->Session->check('Message.flash')) {
