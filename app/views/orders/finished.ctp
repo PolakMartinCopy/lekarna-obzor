@@ -23,3 +23,4 @@
 <script type="text/javascript">
 	<?php echo $jscript_code ?>
 </script>
+<iframe src="http://www.zbozi.cz/action/92140/conversion?chsum=ia0TYT-eX1TJnAfw0gdCsw==" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="position:absolute; top:-3000px; left:-3000px; width:1px; height:1px; overflow:hidden;"></iframe>
