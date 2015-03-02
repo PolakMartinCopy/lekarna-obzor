@@ -114,7 +114,6 @@ class SearchesController extends AppController {
 						"Product.title LIKE '%%" . $value . "%%'",
 						"Product.heading LIKE '%%" . $value . "%%'",
 						"Product.related_name LIKE '%%" . $value . "%%'",
-						"Product.zbozi_name LIKE '%%" . $value . "%%'",
 						"Product.short_description LIKE '%%" . $value . "%%'",
 						"Product.description  LIKE '%%" . $value . "%%'",
 						"Manufacturer.name  LIKE '%%" . $value . "%%'"

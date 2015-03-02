@@ -473,6 +473,9 @@ class ProductsController extends AppController {
 			if (empty($this->data['Product']['zbozi_name'])) {
 				$this->data['Product']['zbozi_name'] = $this->data['Product']['name'];
 			}
+			if (empty($this->data['Product']['heureka_name'])) {
+				$this->data['Product']['heureka_name'] = $this->data['Product']['name'];
+			}
 			
 			// ukladam produkt
 			if ($this->Product->save($this->data)) {
@@ -556,6 +559,9 @@ class ProductsController extends AppController {
 			if (empty($this->data['Product']['zbozi_name'])) {
 				$this->data['Product']['zbozi_name'] = $this->data['Product']['name'];
 			}
+			if (empty($this->data['Product']['heureka_name'])) {
+				$this->data['Product']['heureka_name'] = $this->data['Product']['name'];
+			}
 
 			if ($this->Product->save($this->data)) {
 				$this->Session->setFlash('Produkt byl uložen.');
@@ -584,6 +590,9 @@ class ProductsController extends AppController {
 			}
 			if (empty($this->data['Product']['zbozi_name'])) {
 				$this->data['Product']['zbozi_name'] = $this->data['Product']['name'];
+			}
+			if (empty($this->data['Product']['heureka_name'])) {
+				$this->data['Product']['heureka_name'] = $this->data['Product']['name'];
 			}
 			
 			if (empty($opened_category_id)) {

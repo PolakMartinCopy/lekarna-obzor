@@ -41,6 +41,7 @@ class ExportsController extends AppController{
 				'Product.retail_price_with_dph',
 				'Product.ean',
 				'Product.zbozi_name',
+				'Product.heureka_name',
 				'Product.discount_common',
 				'Product.zbozi_cpc',
 				'Product.heureka_cpc'
@@ -127,9 +128,9 @@ class ExportsController extends AppController{
 		$this->Shipping = new Shipping;
 		// vytahnu si vsechny zpusoby dopravy mimo osobniho odberu (id = 1)
 		$shippings = $this->Shipping->find('all', array(
-				'conditions' => array('NOT' => array('Shipping.heureka_id' => null)),
-				'contain' => array(),
-				'fields' => array('Shipping.id', 'Shipping.name', 'Shipping.price', 'Shipping.free', 'Shipping.heureka_id')
+			'conditions' => array('NOT' => array('Shipping.heureka_id' => null)),
+			'contain' => array(),
+			'fields' => array('Shipping.id', 'Shipping.name', 'Shipping.price', 'Shipping.free', 'Shipping.heureka_id')
 		));
 		$this->set('shippings', $shippings);
 	}

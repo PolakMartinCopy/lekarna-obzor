@@ -30,6 +30,10 @@
 				<td><?php echo $form->input('Product.zbozi_name', array('label' => false, 'size' => 60))?></td>
 			</tr>
 			<tr>
+				<th>Název - heureka.cz</th>
+				<td><?php echo $form->input('Product.heureka_name', array('label' => false, 'size' => 60))?></td>
+			</tr>
+			<tr>
 				<th>
 					Výrobce:
 				</th>

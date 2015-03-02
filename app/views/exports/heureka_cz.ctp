@@ -1,7 +1,7 @@
 <? foreach ( $products as $product ){ ?>
 	<SHOPITEM>
 		<ITEM_ID><?php echo $product['Product']['id']?></ITEM_ID>
-		<PRODUCT><?=$product['Product']['zbozi_name']?></PRODUCT>
+		<PRODUCT><?=$product['Product']['heureka_name']?></PRODUCT>
 		<DESCRIPTION><?=$product['Product']['short_description']?></DESCRIPTION>
 		<URL>http://www.<?php echo CUST_ROOT?>/<?=$product['Product']['url']?></URL>
 <?php if (!empty($product['Image'][0]['name'])) { ?>
