@@ -20,7 +20,7 @@
 			<?php // pokud je cena produktu vyssi, nez cena objednavky, od ktere je tato doprava zdarma, cena je 0, jinak zadam cenu dopravy
 			$shipping_price = 0;
 			if ($shipping['Shipping']['free'] && $product['Product']['retail_price_with_dph'] < $shipping['Shipping']['free']) {
-				$shipping_price = ceil($shipping['Shipping']['price']);
+				$shipping_price = ceil($shipping[0]['min_price']);
 			}
 			?>
 			<DELIVERY_PRICE><?php echo $shipping_price?></DELIVERY_PRICE>	

@@ -126,12 +126,14 @@ class ExportsController extends AppController{
 		// udaje o moznych variantach dopravy
 		App::import('Model', 'Shipping');
 		$this->Shipping = new Shipping;
-		// vytahnu si vsechny zpusoby dopravy mimo osobniho odberu (id = 1)
+		
 		$shippings = $this->Shipping->find('all', array(
 			'conditions' => array('NOT' => array('Shipping.heureka_id' => null)),
 			'contain' => array(),
-			'fields' => array('Shipping.id', 'Shipping.name', 'Shipping.price', 'Shipping.free', 'Shipping.heureka_id')
+			'group' => array('Shipping.heureka_id'),
+			'fields' => array('*', 'MIN(Shipping.price) AS min_price') 
 		));
+
 		$this->set('shippings', $shippings);
 	}
 	
