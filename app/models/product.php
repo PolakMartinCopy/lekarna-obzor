@@ -102,7 +102,7 @@ class Product extends AppModel {
 		// jestlize je uzivatel prihlaseny
 		if ($this->Session->check('Customer')) {
 			// podivam se, jestli je zadana sleva pro prihlasene a je mensi, nez obecna sleva
-			if ($product['Product']['discount_member'] > 0 && $product['Product']['discount_member'] < $discount_price) {
+			if (isset($product['Product']['discount_member']) && $product['Product']['discount_member'] > 0 && $product['Product']['discount_member'] < $discount_price) {
 				// kdyz jo, tak ji dam jako vyslednou slevu
 				$discount_price = $product['Product']['discount_member'];
 			}
