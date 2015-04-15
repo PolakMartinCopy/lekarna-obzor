@@ -21,10 +21,10 @@
 	<?php
 			$class = '';
 		}
-	}
 	?>
 	<div class="clearer"></div>
 </div>
+<?php } ?>
 
 <div class="menu_spacer"></div>
 <h2 class="product_listing">Produkty</h2>
