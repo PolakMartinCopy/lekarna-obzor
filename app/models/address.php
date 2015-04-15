@@ -16,11 +16,6 @@ class Address extends AppModel {
 			'required' => true,
 			'message' => 'Vyplňte prosím název ulice.'
 		),
-		'street_no' => array(
-			'rule' => array('minLength', 1),
-			'required' => true,
-			'message' => 'Vyplňte prosím číslo popisné.'
-		),
 		'zip' => array(
 			'rule' => array('between', 5, 6),
 			'required' => true,

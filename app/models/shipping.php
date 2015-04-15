@@ -31,6 +31,8 @@ class Shipping extends AppModel {
 	    )
 	);
 	
+	var $GP_shipping_id = array(12, 13);
+	
 
 	function get_data($id){
 		$this->recursive = -1;
@@ -47,5 +49,23 @@ class Shipping extends AppModel {
 		return $price;
 	}
 
+	function geis_point_url($session) {
+		$address = $session->read('Address');
+		if (!$address) {
+			return false;
+		}
+		$cust_address = $address['street'];
+		if (!empty($address['street_no'])) {
+			$cust_address .= ' ' . $address['street_no'];
+		}
+		$cust_address .= ';' . $address['city'] . ';' . $address['zip'];
+		$cust_address = urlencode($cust_address);
+		$redirect_url = 'http://' . $_SERVER['HTTP_HOST'] . '/orders/recapitulation';
+		$redirect_url = urlencode($redirect_url);
+		$service_url = 'http://plugin.geispoint.cz/map.php';
+		$service_url = $service_url . '?CustAddress=' . $cust_address . '&ReturnURL=' . $redirect_url;
+	
+		return $service_url;
+	}
 }
 ?>

@@ -350,13 +350,27 @@ class OrdersController extends AppController {
 			
 			// jsou-li data validni
 			if ( $valid_address && $valid_customer ){
-				// v prvnim kroku se vklada pouze dorucovaci adresa
 				$this->data['Address']['type'] = 'd';
+				$payment_address['Address'] = $this->data['Address'];
+				$payment_address['Address']['type'] = 'f';
 				
 				// poslu si dal data zakaznika, adresy a objednavky
 				$this->Session->write('Customer', $this->data['Customer']);
 				$this->Session->write('Address', $this->data['Address']);
+				$this->Session->write('Address_payment', $payment_address['Address']);
 				$this->Session->write('Order', $this->data['Order']);
+				
+				// pokud je jako zpusob dopravy vybrano Geis Point (doruceni na odberne misto), presmeruju na plugin pro vyber odberneho
+				// mista s tim, aby se po navratu presmeroval na ulozeni informaci o vyberu odberneho mista
+				if (in_array($this->data['Order']['shipping_id'], $this->Order->Shipping->GP_shipping_id)) {
+					if ($service_url = $this->Order->Shipping->geis_point_url($this->Session)) {
+						$this->redirect($service_url);
+					} else {
+						$this->Session->setFlash('Zadejte prosím Vaši doručovací adresu');
+						$this->redirect(array('controller' => 'orders', 'action' => 'add'));
+					}
+				}
+				
 				$this->redirect(array('action' => 'recapitulation'), null, true);
 			} else {
 				$this->Session->setFlash('Pro pokračování v objednávce vyplňte prosím všechna pole.');
@@ -372,6 +386,48 @@ class OrdersController extends AppController {
 		
 		$order = $this->Session->read('Order');
 		$customer = $this->Session->read('Customer');
+
+		$shipping_id = $order['shipping_id'];
+		// pokud mam zvoleno dodani na vydejni misto geis point, nactu parametry pro doruceni (z GET nebo sesny)
+		if (in_array($shipping_id, $this->Order->Shipping->GP_shipping_id)) {
+			// parametry jsou v GET
+			if (isset($this->params['url']['GPName']) && isset($this->params['url']['GPAddress']) && isset($this->params['url']['GPID'])) {
+				$gp_name = urldecode($this->params['url']['GPName']);
+				$gp_address = urldecode($this->params['url']['GPAddress']);
+				$gp_address = explode(';', $gp_address);
+				$gp_street = '';
+				if (isset($gp_address[0])) {
+					$gp_street = $gp_address[0];
+				}
+				$gp_city = '';
+				if (isset($gp_address[1])) {
+					$gp_city = $gp_address[1];
+				}
+				$gp_zip = '';
+				if (isset($gp_address[2])) {
+					$gp_zip = $gp_address[2];
+				}
+				$gp_id = urldecode($this->params['url']['GPID']);
+				// ulozim do sesny jako dorucovaci adresu
+				$this->Session->write('Address.name', $gp_name . ', ' . $gp_id);
+				$this->Session->write('Address.street', $gp_street);
+				$this->Session->write('Address.street_no', '');
+				$this->Session->write('Address.city', $gp_city);
+				$this->Session->write('Address.zip', $gp_zip);
+				// poznacim si, ze adresa je vybrana pomoci pluginu
+				$this->Session->write('Address.plugin_check', true);
+			} elseif (!$this->Session->check('Address') || !$this->Session->check('Address.plugin_check') || !$this->Session->read('Address.plugin_check')) {
+				// nemam data pro vydejni misto ani v sesne ani v GET, ale potrebuju je, takze presmeruju znova na plugin
+				// pro vyber vydejniho mista a z nej se sem vratim
+				if ($service_url = $this->Order->Shipping->geis_point_url($this->Session)) {
+					$this->redirect($service_url);
+				} else {
+					$this->Session->setFlash('Zadejte prosím Vaši doručovací adresu.');
+					$this->redirect(array('controller' => 'customers', 'action' => 'order_personal_info'));
+				}
+			}
+		}
+
 		$address = $this->Session->read('Address');
 
 		if (!$this->Session->check('Address_payment')){
@@ -459,7 +515,7 @@ class OrdersController extends AppController {
 		$shipping_choices = $this->Order->Shipping->find('all', array(
 			'contain' => array(),
 			'fields' => array('id', 'name', 'price', 'free'),
-			'order' => array('name' => 'asc')
+			'order' => array('Shipping.order' => 'asc')
 		));
 		// v selectu chci mit, kolik stoji doprava
 		foreach ($shipping_choices as $shipping_choice) {
@@ -472,8 +528,19 @@ class OrdersController extends AppController {
 		
 		$this->set('shipping_choices', $shipping_choices_list);
 		
-		if ( isset($this->data) ){
+		if (isset($this->data)) {
 			$this->Session->write('Order', $this->data['Order']);
+			// pokud je jako zpusob dopravy vybrano Geis Point (doruceni na odberne misto), presmeruju na plugin pro vyber odberneho
+			// mista s tim, aby se po navratu presmeroval na ulozeni informaci o vyberu odberneho mista
+			if (in_array($this->data['Order']['shipping_id'], $this->Order->Shipping->GP_shipping_id)) {
+				if ($service_url = $this->Order->Shipping->geis_point_url($this->Session)) {
+					$this->redirect($service_url);
+				} else {
+					$this->Session->setFlash('Zadejte prosím Vaši doručovací adresu');
+					$this->redirect(array('controller' => 'orders', 'action' => 'add'));
+				}
+			}
+			
 			$this->Session->setFlash('Objednávka byla upravena.');
 			$this->redirect(array('controller' => 'orders', 'action' => 'recapitulation')); 
 		} else {
@@ -487,31 +554,30 @@ class OrdersController extends AppController {
 			$this->redirect(array('controller' => 'carts_products', 'action' => 'index'));
 		}
 		
-		if (!$this->Session->check('Customer.id')){
-			$sess_customer = $this->Session->read('Customer');
+		$sess_customer = $this->Session->read('Customer');
+		$customer['Customer'] = $sess_customer;
+		
+		// pridam adresy
+		$customer['Address'][] = $this->Session->read('Address');
+		$customer['Address'][] = $this->Session->read('Address_payment');
+
+		if (!isset($customer['Customer']['id']) || empty($customer['Customer']['id'])) {
 			// jedna se o neprihlaseneho a nezaregistrovaneho zakaznika
 			// musim vytvorit novy zakaznicky ucet,
 			// takze vygeneruju login a heslo
-			$customer['Customer'] = $sess_customer;
 			$customer['Customer']['login'] = $this->Order->Customer->generateLogin($sess_customer);
-			$customer_password = $this->Order->Customer->generatePassword($sess_customer['last_name']);
+			$customer_password = $this->Order->Customer->generatePassword($sess_customer);
 			$customer['Customer']['password'] = md5($customer_password);
 			$customer['Customer']['confirmed'] = 1;
 			$customer['Customer']['registration_source'] = 'eshop';
 			
-			// pridam adresy
-			$customer['Address'][] = $this->Session->read('Address');
-			$customer['Address'][] = $this->Session->read('Address_payment');
-
 			// ulozim si bokem heslo v nezahashovane podobe,
 			// v dalsim pohledu mu ho chci vypsat
 			$this->Session->write('cpass', $customer_password);
 		
 			$c_dataSource = $this->Order->Customer->getDataSource();
 			$c_dataSource->begin($this->Order->Customer);
-			try {
-				$this->Order->Customer->saveAll($customer);
-			} catch (Exception $e) {
+			if (!$this->Order->Customer->saveAll($customer)) {
 				$c_dataSource->rollback($this->Order->Customer);
 				$this->Session->setFlash('Nepodařilo se uložit data o zákazníkovi, zopakujte prosím dokončení objednávky.');
 				$this->redirect(array('controller' => 'orders', 'action' => 'recapitulation'));
@@ -523,18 +589,6 @@ class OrdersController extends AppController {
 			// uvedl svou emailovou adresu
 			$this->Order->Customer->notify_account_created($customer['Customer']);
 			$customer['Customer']['id'] = $this->Order->Customer->id;
-		} else {
-			// zakaznik je zaregistrovany, takze jen nastavim
-			// jeho id podle session a updatenu, kdyby nahodou
-			// menil nektere ze svych kontaktnich udaju
-			$customer = $this->Order->Customer->find('first', array(
-				'conditions' => array('Customer.id' => $this->Session->read('Customer.id')),
-				'contain' => array(
-					'Address' => array(
-						'order' => array('Address.type' => 'asc')
-					)
-				)
-			));
 		}
 
 		//data pro objednavku
