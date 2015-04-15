@@ -85,13 +85,13 @@
 				?>
 				<div class="main_category<?php echo ($i % 3 == 0) ? ' first' : ''?><?php echo ($i < 3) ? ' top' : ''?>">
 					<a class="top_cat" href="/<?php echo  $category["Category"]['url']?>"><?php echo $category['Category']['name']?></a>
-					<?php if (!empty($category['children'])) { ?>
 					<p class="<?php echo $class?>">
+					<?php if (!empty($category['children'])) { ?>
 						<?php foreach ($category['children'] as $category_child) { ?>
 						<a href="/<?php echo $category_child['Category']['url']?>"><?php echo $category_child['Category']['name']?></a>
 						<?php } ?>
-					</p>
 					<?php } ?>
+					</p>
 				</div>
 				<?php $i++; 
 				} ?>
