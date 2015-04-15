@@ -317,7 +317,7 @@ class OrdersController extends AppController {
 		$shipping_choices = $this->Order->Shipping->find('all', array(
 			'contain' => array(),
 			'fields' => array('id', 'name', 'price', 'free'),
-			'order' => array('name' => 'asc')
+			'order' => array('Shipping.order' => 'asc')
 		));
 		// v selectu chci mit, kolik stoji doprava
 		foreach ($shipping_choices as $shipping_choice) {
