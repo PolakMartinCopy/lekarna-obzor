@@ -142,6 +142,18 @@ function resize($filename, $max_x = 100, $max_y = 100) {
 	return array($i[0], $i[1]);
 }
 
+function download_url($url = null) {
+	if ($url) {
+		$content = false;
+		$ch = curl_init($url);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		$content = curl_exec($ch);
+		curl_close($ch);
+		return $content;
+	}
+	return false;
+}
+
 define('CUST_MAIL', 'eshop@pharmacorp.cz');
 define('CUST_ROOT', 'lekarna-obzor.cz');
 define('CUST_NAME', 'Lékarna Obzor CZ');

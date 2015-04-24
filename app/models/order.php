@@ -340,6 +340,67 @@ class Order extends AppModel {
 		}
 		return $id;
 	}
+	
+	function track_gparcel($id = null){
+		App::import('Helper', 'Session');
+		$this->Session = new SessionHelper;
+	
+		// nactu si objednavku, protoze potrebuju vedet
+		// cislo baliku v kterem byla objednavka expedovana
+		$this->contain('Shipping');
+		$order = $this->read(null, $id);
+	
+		// natvrdo definovane URL trackeru general parcel
+		$tracker_url = $order['Shipping']['tracker_prefix'] . trim($order['Order']['shipping_number']) . $order['Shipping']['tracker_postfix'];
+	
+		// nactu si obsah trackovaci stranky
+		$contents = download_url($tracker_url);
+	
+		if ( $contents !== false ){
+			$contents = eregi_replace("\r\n", "", $contents);
+			$contents = eregi_replace("\t", "", $contents);
+				
+			$pattern = '|<table class=\"GridView\"(.*)table>|';
+			preg_match_all($pattern, $contents, $contents);
+				
+			//			debug($contents);die();
+				
+			$pattern = '|<td>(.*)</td>|U';
+				
+			if (!isset($contents[0]) || !isset($contents[0][0])) {
+				return false;
+			}
+				
+			preg_match_all($pattern, $contents[0][0], $contents);
+	
+			if ( isset($contents[1]) ){
+				$rows = array();
+	
+				for ( $i = 0; $i < count($contents[1]); $i++) {
+					$rows[$i] = trim($contents[1][$i]);
+					if ($rows[$i] == 'Doručen&#237;' ){
+						// musim zmenit objednavku na doruceno a zapsat poznamku o tom, kdy byla dorucena
+						$this->id = $id;
+						$this->save(array('status_id' => '4'), false, array('status_id', 'modified'));
+	
+						$date = date("d.m.Y");
+	
+						// zapisu poznamku o tom, kdy byla dorucena
+						$note = array('order_id' => $id,
+								'status_id' => '4',
+								'administrator_id' => $this->Session->read('Administrator.id'),
+								'note' => 'Zásilka byla automaticky identifikována jako doručená zákazníkovi. Datum doručení: ' . $date
+						);
+						unset($this->Ordernote->id);
+						$this->Ordernote->save($note);
+						return true;
+					}
+				}
+			}
+			return true;
+		}
+		return $id;
+	}
 
 	function build($customer) {
 		App::import('model', 'CakeSession');

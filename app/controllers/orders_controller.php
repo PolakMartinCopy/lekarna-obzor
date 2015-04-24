@@ -163,33 +163,39 @@ class OrdersController extends AppController {
 	function admin_track(){
 		$this->Order->recursive = -1;
 		
-		$orders = $this->Order->find('all',
-			array('conditions' => array(
-					// nekontroluju 4 - dorucene objednavky
-					// 8 - objednavka vracena
-					// 5 - storno
-					"NOT" => array(
-						"status_id" => array('4', '8', '5')
-					),
- 					"shipping_number != ''",
-					//'id' => 3914
-				),
-				'fields' => array('id', 'shipping_id')
-			)
-		);
+		$orders = $this->Order->find('all', array(
+			'conditions' => array(
+				// nekontroluju terminalni stavy objednavek (closed == true)
+				'Status.closed' => false,
+ 				"Order.shipping_number != ''",
+			),
+			'contain' => array('Status', 'Shipping'),
+			'fields' => array('Order.id', 'Shipping.heureka_id'),
+		));
 
 		$bad_orders = array();
+			$bad_orders = array();
 		foreach( $orders as $order ){
 			// rozlisit zpusob doruceni
-			switch ( $order['Order']['shipping_id'] ){
-				case "2":
-					// ceska posta - dobirka
+			switch ( $order['Shipping']['heureka_id'] ){
+				case "CESKA_POSTA":
+					// ceska posta
 					$result = $this->Order->track_cpost($order['Order']['id']);
+					break;
 				break;
-				case "9":
-					// ceska posta - platba predem
-					$result = $this->Order->track_cpost($order['Order']['id']);
+				case "GEIS":
+					// general parcel
+					$result = $this->Order->track_gparcel($order['Order']['id']);
+					break;
 				break;
+				case "DPD":
+					// DPD
+					$result = $this->Order->track_dpd($order['Order']['id']);
+					break;
+				case "PPL":
+					// PPL
+					$result = $this->Order->track_ppl($order['Order']['id']);
+					break;
 				default:
 					$result = $order['Order']['id'];
 				break;
