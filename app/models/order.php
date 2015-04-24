@@ -202,8 +202,8 @@ class Order extends AppModel {
 		
 		$tracker_url = $shipping['Shipping']['tracker_prefix'] . trim($order['Order']['shipping_number']) . $shipping['Shipping']['tracker_postfix'];
 		// nactu si obsah trackovaci stranky
-		$contents = @file_get_contents($tracker_url);
-		if ( $contents !== false ){
+		$contents = download_url($tracker_url);
+		if ($contents !== false){
 			$contents = eregi_replace("\r\n", "", $contents);
 			$contents = eregi_replace("\t", "", $contents);
 			
@@ -220,11 +220,11 @@ class Order extends AppModel {
 				return $id;
 				die('nesedi pattern pri zjisteni dorucenosti baliku u CP - tabulka');
 			}
-			
+
 			// stavy si rozhodim do jednotlivych prvku pole
 			$pattern = '|<tr>(.*)</tr>|U';
 			preg_match_all($pattern, $table_contents[1][0], $rows);
-			if (isset($rows[1])) {
+			if (!isset($rows[1])) {
 				return $id;
 				die('nesedi pattern pri zjisteni dorucenosti baliku u CP - radek tabulky');
 			}
@@ -266,7 +266,7 @@ class Order extends AppModel {
 			// doruceno nemam, hledam, jestli se zasilka nevratila zpet odesilateli
 			if ( !$found ){
 				foreach ($rows[1] as $os){
-					if ( eregi('Item was returned to sender', $os) ){
+					if ( eregi('Vrácení zásilky odesílateli', $os) ){
 						$found = true;
 						
 						// pokud byla vracena, najdu si datum vraceni
@@ -282,7 +282,7 @@ class Order extends AppModel {
 						
 						// musim zmenit objednavku na vraceno a zapsat poznamku o tom, kdy byla vracena
 						$this->id = $id;
-						$this->save(array('status_id' => '4'), false, array('status_id', 'modified'));
+						$this->save(array('status_id' => '8'), false, array('status_id', 'modified'));
 						
 						// zapisu poznamku o tom, kdy byla vracena
 						$note = array('order_id' => $id,
