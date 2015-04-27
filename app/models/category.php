@@ -173,13 +173,19 @@ class Category extends AppModel {
 				'Product.active' => true,
 				'Availability.cart_allowed' => true
 			),
-			'contain' => array('Product'),
+			'contain' => array(),
 			'joins' => array(
 				array(
 					'table' => 'ordered_products',
 					'alias' => 'OrderedProduct',
 					'type' => 'LEFT',
 					'conditions' => array('OrderedProduct.product_id = CategoriesProduct.product_id')
+				),
+				array(
+					'table' => 'products',
+					'alias' => 'Product',
+					'type' => 'INNER',
+					'conditions' => array('Product.id = CategoriesProduct.product_id')	
 				),
 				array(
 					'table' => 'availabilities',
@@ -239,20 +245,50 @@ class Category extends AppModel {
 				'conditions' => array(
 					'CategoriesProduct.category_id' => $subtree_ids,
 					'NOT' => array('CategoriesProduct.product_id' => $product_ids),
-					'Product.active' => true
+					'Product.active' => true,
+					'Availability.cart_allowed' => true
 				),
-				'contain' => array(
+				'contain' => array(),
+				'joins' => array(
+					array(
+						'table' => 'products',
+						'alias' => 'Product',
+						'type' => 'INNER',
+						'conditions' => array('Product.id = CategoriesProduct.product_id')
+					),
+					array(
+						'table' => 'availabilities',
+						'alias' => 'Availability',
+						'type' => 'INNER',
+						'conditions' => array('Product.availability_id = Availability.id')
+					)
+				),
+/*				'contain' => array(
 					'Product' => array(
 						'Image' => array(
-							'conditions' => array('Image.is_main' => '1'),
+							'conditions' => ,
 							'fields' => array('Image.id', 'Image.name')
 						),
 						'fields' => array('Product.id', 'Product.name', 'Product.url')
 					)
-				),
+				), */
+				'fields' => array('Product.id', 'Product.name', 'Product.url', 'Availability.*'),
 				'limit' => 3-count($products),
 				'order' => 'Rand()'
 			));
+
+			foreach ($complement_products as &$complement_product) {
+				$image = $this->CategoriesProduct->Product->Image->find('first', array(
+					'conditions' => array('Image.is_main' => '1', 'Image.product_id' => $complement_product['Product']['id']),
+					'contain' => array(),
+					'fields' => array('Image.id', 'Image.name')
+				));
+				$complement_product['Product']['Image'] = array();
+				if (!empty($image)) {
+					$complement_product['Product']['Image'][0] = $image['Image'];
+				}
+			}
+
 			$products = array_merge($products, $complement_products);
 		}
 		return $products;
