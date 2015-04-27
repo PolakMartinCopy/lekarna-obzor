@@ -170,7 +170,8 @@ class Category extends AppModel {
 			'conditions' => array(
 				'CategoriesProduct.category_id' => $subtree_categories,
 				'NOT' => array('OrderedProduct.product_quantity' => null),
-				'Product.active' => true
+				'Product.active' => true,
+				'Availability.cart_allowed' => true
 			),
 			'contain' => array('Product'),
 			'joins' => array(
@@ -179,6 +180,12 @@ class Category extends AppModel {
 					'alias' => 'OrderedProduct',
 					'type' => 'LEFT',
 					'conditions' => array('OrderedProduct.product_id = CategoriesProduct.product_id')
+				),
+				array(
+					'table' => 'availabilities',
+					'alias' => 'Availability',
+					'type' => 'LEFT',
+					'conditions' => array('Product.availability_id = Availability.id')
 				)
 			),
 			'fields' => array('CategoriesProduct.product_id', 'CategoriesProduct.quantity'),

@@ -5,7 +5,7 @@ class CategoriesMostSoldProductsController extends AppController {
 	function admin_generate() {
 		// vyprazdnim tabulku		
 		if (!$this->CategoriesMostSoldProduct->truncate()) {
-			die('nepodarilo se vyprazdnit tabulky categories_most_sold_products');
+			die('nepodarilo se vyprazdnit tabulku categories_most_sold_products');
 		}
 		
 		// nactu seznam kategorii
