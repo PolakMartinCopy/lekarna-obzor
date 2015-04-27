@@ -320,20 +320,7 @@ class OrdersController extends AppController {
 		$this->set('breadcrumbs', $breadcrumbs);
 		
 		// vytahnu si list pro select shippings
-		$shipping_choices = $this->Order->Shipping->find('all', array(
-			'contain' => array(),
-			'fields' => array('id', 'name', 'price', 'free'),
-			'order' => array('Shipping.order' => 'asc')
-		));
-		// v selectu chci mit, kolik stoji doprava
-		foreach ($shipping_choices as $shipping_choice) {
-			$shipping_item = $shipping_choice['Shipping']['name'] . ' - ' . $shipping_choice['Shipping']['price'] . ' Kč';
-			if ($cart_stats['total_price'] > $shipping_choice['Shipping']['free']) {
-				$shipping_item = $shipping_choice['Shipping']['name'] . ' - zdarma';
-			}
-			$shipping_choices_list[$shipping_choice['Shipping']['id']] = $shipping_item;
-		}
-		
+		$shipping_choices_list = $this->Order->getShippingChoicesList();
 		$this->set('shipping_choices', $shipping_choices_list);
 		
 /*		// vytahnu si list pro select payments
@@ -391,9 +378,23 @@ class OrdersController extends AppController {
 		}
 		
 		$order = $this->Session->read('Order');
+		
 		$customer = $this->Session->read('Customer');
 
 		$shipping_id = $order['shipping_id'];
+		// musim se podivat, jestli obsah objednavky splnuje podminku pro dany zpusob dopravy
+		// mam dopravu doporucenym psanim, kterou si muze zakaznik vybrat pouze v pripade, ze
+		//		- v kosiku (objednavce) jsou pouze produkty z definovanych kategorii
+		//		- v kosiku (objednavce) je mene nez maximalni definovany pocet produktu
+		// pokud mam zvoleny zpusob dopravy doporucenym psanim, ale nejsou pro to splneny podminky, musim presmerovat na vyber
+		// zpusobu dopravy
+		if ($this->Order->Shipping->isRecommendedLetterShipping($shipping_id) && !$this->Order->isRecommendedLetterPossible()) {
+			$this->Session->setFlash('Zboží není možno doručit zvoleným způsobem dopravy, proto vyberte prosím jiný.<br/>
+				Více o podmínkách pro dané způsoby dopravy si přečtěte prosím <a href="/cenik-dopravy">zde</a>.');
+			$this->redirect(array('controller' => 'orders', 'action' => 'shipping_edit'));
+		}
+		
+		
 		// pokud mam zvoleno dodani na vydejni misto geis point, nactu parametry pro doruceni (z GET nebo sesny)
 		if (in_array($shipping_id, $this->Order->Shipping->GP_shipping_id)) {
 			// parametry jsou v GET
@@ -510,28 +511,9 @@ class OrdersController extends AppController {
 
 		// nastavim si pro menu zakladni idecko
 		$this->set('opened_category_id', 1);
-
-		// pripojim si model
-		$this->Order->bindModel(array('hasOne' => array('CartsProduct')));
-		// vytahnu si statistiky kosiku
-		$cart_stats = $this->Order->CartsProduct->getStats($this->requestAction('/carts/get_id'));
-		
 		
 		// vytahnu si list pro select shippings
-		$shipping_choices = $this->Order->Shipping->find('all', array(
-			'contain' => array(),
-			'fields' => array('id', 'name', 'price', 'free'),
-			'order' => array('Shipping.order' => 'asc')
-		));
-		// v selectu chci mit, kolik stoji doprava
-		foreach ($shipping_choices as $shipping_choice) {
-			$shipping_item = $shipping_choice['Shipping']['name'] . ' - ' . $shipping_choice['Shipping']['price'] . ' Kč';
-			if ($cart_stats['total_price'] > $shipping_choice['Shipping']['free']) {
-				$shipping_item = $shipping_choice['Shipping']['name'] . ' - zdarma';
-			}
-			$shipping_choices_list[$shipping_choice['Shipping']['id']] = $shipping_item;
-		}
-		
+		$shipping_choices_list = $this->Order->getShippingChoicesList();
 		$this->set('shipping_choices', $shipping_choices_list);
 		
 		if (isset($this->data)) {

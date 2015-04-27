@@ -14,7 +14,7 @@
 		<ITEM_TYPE>new</ITEM_TYPE>
 		<CATEGORYTEXT><?php echo $product['CATEGORYTEXT'] ?></CATEGORYTEXT>
 		<DELIVERY_DATE>0</DELIVERY_DATE>
-<?php foreach ($shippings as $shipping) { ?>
+<?php foreach ($product['shippings'] as $shipping) { ?>
 		<DELIVERY>
 			<DELIVERY_ID><?php echo $shipping['Shipping']['heureka_id']?></DELIVERY_ID>
 			<?php // pokud je cena produktu vyssi, nez cena objednavky, od ktere je tato doprava zdarma, cena je 0, jinak zadam cenu dopravy

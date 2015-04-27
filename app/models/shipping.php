@@ -32,6 +32,10 @@ class Shipping extends AppModel {
 	);
 	
 	var $GP_shipping_id = array(12, 13);
+	// kategorie definovane pro zpusob dopravy doporucenym psanim maji id 77, 162
+	var $recommended_letter_category_ids = array(77, 162);
+	// maximalni pocet produktu v objednavce, ktere je mozne takto poslat, je 2
+	var $recommended_letter_max_count = 2;
 	
 
 	function get_data($id){
@@ -66,6 +70,19 @@ class Shipping extends AppModel {
 		$service_url = $service_url . '?CustAddress=' . $cust_address . '&ReturnURL=' . $redirect_url;
 	
 		return $service_url;
+	}
+	
+	function getRecommendedLetterShippingIds() {
+		$shippings = $this->find('all', array(
+			'conditions' => array('Shipping.special' => 'recommended_letter'),
+			'contain' => array(),
+			'fields' => array('Shipping.id')	
+		));
+		return Set::extract('/Shipping/id', $shippings);
+	}
+	
+	function isRecommendedLetterShipping($shipping_id) {
+		return in_array($shipping_id, $this->getRecommendedLetterShippingIds());
 	}
 }
 ?>

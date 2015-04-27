@@ -379,5 +379,31 @@ class Product extends AppModel {
 		
 		return $products;
 	}
+	
+	function isRecommendedLetterPossible($id) {
+		App::import('Model', 'Shipping');
+		$this->Shipping = &new Shipping;
+		// mame tam zpusoby dopravy doporucenym psanim, ktere se maji zobrazit ale pouze v pripade, ze:
+		//		- v kosiku (objednavce) jsou pouze produkty z definovanych kategorii
+		//		- v kosiku (objednavce) je mene nez maximalni definovany pocet produktu
+		// zpusoby dopravy doporucenym psanim jsou definovany jako properties objektu Order
+		// kategorie definovane pro zpusob dopravy doporucenym psanim
+		$recommended_letter_category_ids = $this->Shipping->recommended_letter_category_ids;
+	
+		$product_categories = $this->CategoriesProduct->find('all', array(
+			'conditions' => array('CategoriesProduct.product_id' => $id),
+			'contain' => array()
+		));
+	
+		$product_categories_ids = Set::extract('/CategoriesProduct/category_id', $product_categories);
+		// pokud je prazdny prunik pole s definovanymi kategoriemi a pole s kategoriemi produktu, produkt neni v
+		// nektere z definovanych kategorii a nemuzu ho poslat doporucenym psanim
+		$category_ids_intersect = array_intersect($recommended_letter_category_ids, $product_categories_ids);
+		if (empty($category_ids_intersect)) {
+			return false;
+		}
+		return true;
+	}
+	
 }
 ?>

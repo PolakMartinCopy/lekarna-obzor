@@ -632,5 +632,63 @@ class Order extends AppModel {
 		$mail->Body .= 'Pro její zobrazení se přihlašte v administraci obchodu: http://www.' . CUST_ROOT . '/admin/' . "\n";
 		$mail->Send();
 	}
+	
+	function isRecommendedLetterPossible() {
+		// mame tam zpusoby dopravy doporucenym psanim, ktere se maji zobrazit ale pouze v pripade, ze:
+		//		- v kosiku (objednavce) jsou pouze produkty z definovanych kategorii
+		//		- v kosiku (objednavce) je mene nez maximalni definovany pocet produktu
+		// zpusoby dopravy doporucenym psanim jsou definovany jako properties objektu Order
+		// maximalni pocet produktu v objednavce, ktere je mozne takto poslat
+		$recommended_letter_max_count = $this->Shipping->recommended_letter_max_count;
+		
+		// vytahnu si produkty v kosiku
+		App::import('Model', 'CartsProduct');
+		$this->CartsProduct = &new CartsProduct;
+		$products = $this->CartsProduct->getProducts();
+		$cart_stats = $this->CartsProduct->getStats($this->CartsProduct->Cart->get_id());
+		
+		// je produktu v objednavce spravny pocet?
+		if ($cart_stats['products_count'] > $recommended_letter_max_count) {
+			return false;
+		}
+		// jsou vsechny produkty ze spravnych kategorii?
+		foreach ($products as $product) {
+			if (!$this->OrderedProduct->Product->isRecommendedLetterPossible($product['Product']['id'])) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	function getShippingChoicesList() {
+		// vytahnu si produkty v kosiku
+		App::import('Model', 'CartsProduct');
+		$this->CartsProduct = &new CartsProduct;
+		$cart_stats = $this->CartsProduct->getStats($this->CartsProduct->Cart->get_id());
+
+		// pokud nesplnuju podminky pro dopravy doporucenym psanim, zakazu si tyto zpusoby dopravy vykreslit zakaznikovi
+		$conditions = array();
+		if (!$this->isRecommendedLetterPossible()) {
+			$conditions = array('Shipping.id NOT IN (' . implode(',', $this->Shipping->getRecommendedLetterShippingIds()) . ')');
+		}
+
+		$shipping_choices = $this->Shipping->find('all', array(
+			'conditions' => $conditions,
+			'contain' => array(),
+			'fields' => array('id', 'name', 'price', 'free'),
+			'order' => array('Shipping.order' => 'asc')
+		));
+
+		// v selectu chci mit, kolik stoji doprava
+		foreach ($shipping_choices as $shipping_choice) {
+			$shipping_item = $shipping_choice['Shipping']['name'] . ' - ' . $shipping_choice['Shipping']['price'] . ' Kč';
+			if ($cart_stats['total_price'] > $shipping_choice['Shipping']['free']) {
+				$shipping_item = $shipping_choice['Shipping']['name'] . ' - zdarma';
+			}
+			$shipping_choices_list[$shipping_choice['Shipping']['id']] = $shipping_item;
+		}
+		
+		return $shipping_choices_list;
+	}
 } // konec tridy
 ?>

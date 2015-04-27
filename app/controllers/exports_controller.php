@@ -102,7 +102,7 @@ class ExportsController extends AppController{
 			'Hobby | Chovatelství' => array(72),
 			'Hobby | Jídlo a nápoje | Nápoje | Nealkoholické nápoje | Bylinné čaje' => array(14, 38)
 		);
-
+		
 		foreach ($products as $index => $product) {
 			// pokud je kategorie produktu sparovana s heurekou, nastavi se rovnou jako 'Sportovni vyziva | *odpovidajici nazev kategorie*
 			foreach ($pairs as $name => $array) {
@@ -119,22 +119,12 @@ class ExportsController extends AppController{
 				unset($keys[0]);
 				$products[$index]['CATEGORYTEXT'] = 'Kosmetika a zdraví | Zdraví | Léčebné přípravky | ' . implode(' | ', $keys);
 			}
+			
+			$shipping_conditions = array();
+			$products[$index]['shippings'] = $this->Export->getProductShipping($product['Product']['id']);
 		}
 	
 		$this->set('products', $products);
-		
-		// udaje o moznych variantach dopravy
-		App::import('Model', 'Shipping');
-		$this->Shipping = new Shipping;
-		
-		$shippings = $this->Shipping->find('all', array(
-			'conditions' => array('NOT' => array('Shipping.heureka_id' => null)),
-			'contain' => array(),
-			'group' => array('Shipping.heureka_id'),
-			'fields' => array('*', 'MIN(Shipping.price) AS min_price') 
-		));
-
-		$this->set('shippings', $shippings);
 	}
 	
 	/**
