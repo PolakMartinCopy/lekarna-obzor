@@ -125,6 +125,7 @@
 		<p><?php echo $product['Product']['description']?></p>
 	</div>
 	<div id="product_comments_wrapper">
+		<p><strong>Upozorňujeme zákazníky, že Vaše komentáře mohou být publikovány.</strong> Pokud si zveřejnění svého příspěvku nepřejete, upozorněte nás prosím. Můžete nás také kontaktovat na naší emailové adrese <a href="mailto:eshop@pharmacorp.cz">eshop@pharmacorp.cz</a>.
 		<?php echo $this->Form->create('Comment', array('url' => array('controller' => 'comments', 'action' => 'add'), 'id' => 'CommentAddForm', 'encoding' => false))?>
 		<table border="0">
 			<tr>
