@@ -33,7 +33,7 @@ class Shipping extends AppModel {
 	
 	var $GP_shipping_id = array(12, 13);
 	// kategorie definovane pro zpusob dopravy doporucenym psanim maji id 77, 162
-	var $recommended_letter_category_ids = array(77, 162, 163);
+	var $recommended_letter_category_ids = array(163);
 	// maximalni pocet produktu v objednavce, ktere je mozne takto poslat, je 2
 	var $recommended_letter_max_count = 2;
 	

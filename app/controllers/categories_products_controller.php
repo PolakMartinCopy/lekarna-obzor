@@ -276,23 +276,5 @@ class CategoriesProductsController extends AppController {
 			return $a['Product']['discount_price'] > $b['Product']['discount_price'];
 		}
 	}
-	
-	function admin_generate() {
-		$categories_products = $this->CategoriesProduct->find('all', array(
-			'conditions' => array('category_id' => array(77, 162)),
-			'contain' => array(),
-		));
-		foreach ($categories_products as $categories_product) {
-			unset($categories_product['CategoriesProduct']['id']);
-			unset($categories_product['CategoriesProduct']['created']);
-			unset($categories_product['CategoriesProduct']['modified']);
-			$categories_product['CategoriesProduct']['category_id'] = 163;
-			$this->CategoriesProduct->create();
-			if (!$this->CategoriesProduct->save($categories_product)) {
-				debug($categories_product); die();
-			}
-		}
-		die('hotovo');
-	}
 }
 ?>
