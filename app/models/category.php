@@ -24,7 +24,7 @@ class Category extends AppModel {
 	);
 	
 	// id kategorii, ktere se nemaji zobrazovat v levem menu
-	var $unactive_categories_ids = array();
+	var $unactive_categories_ids = array(163);
 	
 	function countProducts($id){
 		// spocita mi kolik aktivnich produktu obsahuje dana kategorie
@@ -96,7 +96,7 @@ class Category extends AppModel {
 		$categories = $this->find('threaded', array(
 			'conditions' => array(
 				"parent_id IN ('" . implode("', '", $ids_to_find) . "')",
-//				'id NOT IN (' . implode(',', $this->unactive_categories_ids) . ')'			
+				'id NOT IN (' . implode(',', $this->unactive_categories_ids) . ')'			
 			),
 			'order' => array("lft" => 'asc'),
 			'contain' => array()
@@ -124,7 +124,10 @@ class Category extends AppModel {
 		$category_id = 5;
 		
 		$categories = $this->find('all', array(
-			'conditions' => array('parent_id' => $category_id),
+			'conditions' => array(
+				'parent_id' => $category_id,
+				'id NOT IN (' . implode(',', $this->unactive_categories_ids) . ')'
+			),
 			'contain' => array(),
 			'fields' => array('id', 'name', 'url'),
 			'order' => array('lft' => 'asc')
