@@ -12,7 +12,7 @@
 <meta http-equiv="content-language" content="cs"/>
 <title><?php echo $title_for_content?> | PharmaCorp</title>
 <meta name="description" content="<?php echo $description_for_content?>"/>
-<link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link rel="stylesheet" type="text/css" href="/css/styles.css?v=1" />
 <script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.js"></script>
 <script type="text/javascript" src="/js/login_box_management.js"></script>
