@@ -116,6 +116,8 @@
 			<?php echo $this->element('most_sold')?>
 			<div class="menu_spacer"></div>
 			<?php echo $this->element('newest')?>
+			<div class="menu_spacer"></div>
+			<?php echo $this->element('sukl_link')?>
 		</div>
 		<div class="menu_spacer"></div>
 		<?php echo $this->element('footer')?>

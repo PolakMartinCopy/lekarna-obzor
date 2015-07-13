@@ -36,7 +36,8 @@
 			<?php echo $this->element('sukl_overeni')?>
 			<div class="menu_spacer"></div>
 			<?php echo $this->element('facebook')?>
-			
+			<div class="menu_spacer"></div>
+			<?php echo $this->element('sukl_link')?>
 		</div>
 		<div class="menu_spacer"></div>
 		<?php echo $this->element('footer')?>
