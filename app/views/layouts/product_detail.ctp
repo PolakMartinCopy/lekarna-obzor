@@ -33,8 +33,8 @@
 			<div class="menu_spacer"></div>
 			<?php echo $this->element('advantages')?>
 			<div class="menu_spacer"></div>
-			<?php echo $this->element('sukl')?>
-			<div class="menu_spacer"></div<
+			<?php echo $this->element('sukl_overeni')?>
+			<div class="menu_spacer"></div>
 			<?php echo $this->element('facebook')?>
 			
 		</div>

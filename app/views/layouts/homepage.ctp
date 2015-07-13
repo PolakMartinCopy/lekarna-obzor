@@ -109,7 +109,7 @@
 		<div id="sidebar">
 			<?php echo $this->element('advantages')?>
 			<div class="menu_spacer"></div>
-			<?php echo $this->element('sukl')?>
+			<?php echo $this->element('sukl_overeni')?>
 			<div class="menu_spacer"></div>
 			<?php echo $this->element('facebook')?>
 			<div class="menu_spacer"></div>

@@ -431,11 +431,8 @@ a img{
 }
 
 #sukl_area{
-    width:268px;
-    height:67px;
-    background:#F0F0F0;
     text-align:center;
-    padding-top:8px;
+    padding:8px 0;
 }
 
 #footer_wrapper{
