@@ -933,5 +933,34 @@ class OrdersController extends AppController {
 		$this->set('order', $order);
 		$this->layout = 'pdf'; //this will use the pdf.ctp layout
 	}
+	
+	function admin_syncare_customers() {
+		// Syncare ma ID 
+		$manufacturer_id = 142;
+		$emails = $this->Order->find('all', array(
+			'conditions' => array('Product.manufacturer_id' => $manufacturer_id),
+			'contain' => array(),
+			'joins' => array(
+				array(
+					'table' => 'ordered_products',
+					'alias' => 'OrderedProduct',
+					'type' => 'LEFT',
+					'conditions' => array('OrderedProduct.order_id = Order.id')
+				),
+				array(
+					'table' => 'products',
+					'alias' => 'Product',
+					'type' => 'INNER',
+					'conditions' => array('OrderedProduct.product_id = Product.id')
+				)
+			),
+			'fields' => array('DISTINCT Order.customer_email')
+		));
+		
+		$this->set('emails', $emails);
+		$this->layout = 'csv_file';
+		$this->set('file_name', 'zakaznici-syncare.csv');
+
+	}
 } // konec tridy
 ?>
