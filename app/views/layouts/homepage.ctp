@@ -38,12 +38,14 @@
 		<div class="menu_spacer"></div>
 		<div id="content" class="left">
 			<?php echo $this->element('search_box')?>
-<!--
- 			<div class="menu_spacer"></div>
+
+			<div class="menu_spacer"></div>
 			<div style="border: 5px solid #A5CF4E;padding:5px;font-size:14px">
-				<p>Dovolujeme si upozornit naše zákazníky, že objednávky zpracované od 12.00 hod. 23.12.2014 budou expedovány 2.1.2015. Děkujeme za pochopení.</p>
+				<p>Dovolujeme si upozornit naše zákazníky, že <strong>objednávky s garancí dodání do Vánoc přijímáme do neděle 20. 12. 2015.</strong></p>
+				<p>Pozdější objednávky samozřejmě zpracujeme, ale odešleme až po novém roce.</p>
+				<p>Děkujeme za pochopení a přejeme příjemně strávené sváteční chvíle, tým Lékárny Obzor.</p>
 			</div>
- -->
+			
 			<div class="menu_spacer"></div>
 			<?php
 			if ($this->Session->check('Message.flash')) {
