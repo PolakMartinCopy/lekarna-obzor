@@ -10,6 +10,7 @@
 	<?
 		} else {
 	?>
+<div style="border: 5px solid #a5cf4e; padding: 5px; font-size: 14px"> <p><strong>Objednávky s garancí dodání do Vánoc přijímáme do neděle 20. 12. 2015.</strong></p> <p>Pozdější objednávky samozřejmě zpracujeme, ale odešleme až po novém roce.</p> <p>Vánoční otevírací doba: 21.12. - 23.12.  – 8.00 - 17.30 hod, 24.12. - 3.1. - zavřeno</p> </div> 
 		<table id="cartContents" cellpadding="0" cellspacing="0">
 			<tr>
 				<th style="width:50%">Název produktu</th>
