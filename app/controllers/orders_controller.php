@@ -394,7 +394,6 @@ class OrdersController extends AppController {
 			$this->redirect(array('controller' => 'orders', 'action' => 'shipping_edit'));
 		}
 		
-		
 		// pokud mam zvoleno dodani na vydejni misto geis point, nactu parametry pro doruceni (z GET nebo sesny)
 		if (in_array($shipping_id, $this->Order->Shipping->GP_shipping_id)) {
 			// parametry jsou v GET
@@ -476,19 +475,7 @@ class OrdersController extends AppController {
 		// potrebuju si projit produkty z kosiku,
 		// pokud alespon jeden ma akci s dopravou zdarma,
 		// cela objednavka je s dopravou zdarma
-		$free_shipping = false; // prepoklad, ze doprava zdarma nebude
-		foreach ( $cart_products as $cart_product ){
-			// produkt nejaky priznak ma prirazen
-			if ( !empty($cart_product['Product']['Flag']) ){
-				// projdu vsechny priznaky
-				foreach ( $cart_product['Product']['Flag'] as $flag ){
-					// priznak pro dopravu zdarma je "1"
-					if ( $flag['id'] == 1 && $cart_product['CartsProduct']['quantity'] >= $flag['FlagsProduct']['quantity'] ){
-						$free_shipping = true;
-					}
-				}
-			}
-		}
+		$free_shipping = $this->CartsProduct->Cart->isFreeShipping();
 		$this->set('free_shipping', $free_shipping);
 
 		// vytahnu si data o zpusobu dopravy

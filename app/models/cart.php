@@ -9,6 +9,18 @@ class Cart extends AppModel {
 		)
 	);
 	
+	// produkty definovane pro zpusob dopravy zdarma
+	var $freeShippingProducts = array(
+		array(
+			'product_id' => 943,
+			'quantity' => 2
+		),
+		array(
+			'product_id' => 276,
+			'quantity' => 2
+		)
+	);
+	
 	function get_id() {
 		App::import('Model', 'CakeSession');
 		$this->Session = &new CakeSession;
@@ -34,6 +46,19 @@ class Cart extends AppModel {
 		$this->data['Cart']['userAgent'] = $this->Session->read('Config.userAgent');
 		$this->save($this->data);
 		return $this->getLastInsertID();
+	}
+	
+	function isFreeShipping() {
+		$products = $this->CartsProduct->getProducts();
+		
+		foreach ($products as $product) {
+			foreach ($this->freeShippingProducts as $freeShippingProduct) {
+				if ($product['Product']['id'] == $freeShippingProduct['product_id'] && $product['CartsProduct']['quantity'] >= $freeShippingProduct['quantity']) {
+					return true;
+				}
+			}
+		}
+		return false;
 	}
 }
 ?>

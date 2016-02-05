@@ -33,153 +33,76 @@ class Order extends AppModel {
 	}
 
 	function reCount($id = null){
-
 		// predpokladam, ze postovne bude za 0 Kc
-
 		$order['Order']['shipping_cost'] = 0;
 
-
-
 		// nactu si produkty z objednavky a data o ni
-
 		$contain = array(
-
 			'OrderedProduct' => array(
-
 				'fields' => array('OrderedProduct.id', 'product_id', 'product_quantity', 'product_price_with_dph'),
-
 				'Product' => array(
-
 					'fields' => array('Product.id', 'name'),
-
 					'FlagsProduct'
-
 				)
-
 			)
-
 		);
-
 		
-
 		$conditions = array('Order.id' => $id);
-
 		
-
 		$fields = array('Order.id', 'customer_ico', 'customer_dic', 'subtotal_with_dph', 'shipping_cost', 'shipping_id');
-
 		
-
 		$products = $this->find('first', array(
-
 			'conditions' => $conditions,
-
 			'contain' => $contain,
-
 			'fields' => $fields
-
 		));
-
-	
-
 		
-
 		// nathnu si detaily o postovnem,
-
 		// na ktere chceme menit
-
 		$this->Shipping->recursive = -1;
-
 		$shipping = $this->Shipping->read(null, $products['Order']['shipping_id']);
-
 		
-
 		// pokud je postovne pro normalni zakazniky
-
 		// a pro firemni zakazniky zdarma, nemusim kontrolovat cenu postovneho
-
 		if ( $shipping['Shipping']['price'] != '0' ){
-
 			// po nacteni zkontroluju celkovou cenu objednavky v zavislosti
-
 			// na tom, zda se jedna o koncaka, nebo o firmu
-
 			if ( ( empty($products['Order']['customer_ico']) && $products['Order']['subtotal_with_dph'] <= $shipping['Shipping']['free'] )){
-
 				// predpoklad, ze se za postovne platit bude
-
 				// zavisi to na tom, jestli tolik co koncak,
-
 				// nebo tolik co zakaznik s icem
-
 				
-
 				// prepoklad ze je to koncovy zakaznik
-
 //				$order['Order']['shipping_cost'] = $shipping['Shipping']['ico_price'];
-
 				if ( empty($products['Order']['customer_ico']) ){
-
 					// je to koncak, dam tam cenu pro koncaky
-
 					$order['Order']['shipping_cost'] = $shipping['Shipping']['price'];
-
 				}
-
-
 
 				// musim zjistit, jestli neni v objednavce produkt,
-
 				// ktery ma flag s dopravou zdarma
-
+				App::import('Model', 'Cart');
+				$this->Cart = &new Cart;
 				foreach ( $products['OrderedProduct'] as $op ){
-
-					if ( !empty($op['Product']['FlagsProduct']) ){
-
-						foreach ( $op['Product']['FlagsProduct'] as $pf ){
-
-							// pokud se jedna o flag s dopravou zdarma a pocet produktu
-
-							// splnuje podminku pro dopravu zdarma
-
-							if ( $pf['flag_id'] == 1 && $pf['quantity'] <= $op['product_quantity'] ){
-
-								// indukuje dopravu zdarma
-
-								$order['Order']['shipping_cost'] = 0;
-
-							}
-
+					foreach ($this->Cart->freeShippingProducts as $freeShippingProduct) {
+						if ($op['Product']['id'] == $freeShippingProduct['product_id'] && $op['product_quantity'] >= $freeShippingProduct['quantity']) {
+							$order['Order']['shipping_cost'] = 0;
+							break;
 						}
-
 					}
-
 				}
-
 			}
-
 		}
-
-		
 
 		$order_total = 0;
-
 		$free_shipping = false;
-
 		foreach ( $products['OrderedProduct'] as $product ){
-
 			$order_total = $order_total + $product['product_price_with_dph'] * $product['product_quantity'];
-
 		}
 
-
-
 		$order['Order']['subtotal_with_dph'] = $order_total;
-
 		$this->id = $id;
-
 		$this->save($order, false, array('subtotal_with_dph', 'shipping_cost'));
-
 	}
 
 	/**
@@ -448,18 +371,11 @@ class Order extends AppModel {
 		$mail_products = array();
 		$order_total_with_dph = 0;
 		$order_total_wout_dph = 0;
-		$free_shipping = false;
+		$free_shipping = $this->CartsProduct->Cart->isFreeShipping();
 
 		$cp_count = 0;
 		$ordered_products = array();
-		foreach ( $cart_products as $cart_product ){
-			// projdu vsechny priznaky
-			foreach ( $cart_product['Product']['Flag'] as $flags_product ){
-				// priznak pro dopravu zdarma je "1"
-				if ( $flags_product['FlagsProduct']['flag_id'] == 1 && $cart_product['CartsProduct']['quantity'] >= $flags_product['FlagsProduct']['quantity'] ){
-					$free_shipping = true;
-				}
-			}
+		foreach ($cart_products as $cart_product) {
 			// data pro produkt
 			$ordered_products[$cp_count]['OrderedProduct']['product_id'] = $cart_product['CartsProduct']['product_id'];
 			$ordered_products[$cp_count]['OrderedProduct']['subproduct_id'] = $cart_product['CartsProduct']['subproduct_id'];
@@ -678,6 +594,15 @@ class Order extends AppModel {
 			'fields' => array('id', 'name', 'price', 'free'),
 			'order' => array('Shipping.order' => 'asc')
 		));
+		
+		// pokud mam v kosiku produkty, definovane v Cart->free_shipping_products v dostatecnem mnozstvi, je doprava zdarma
+		App::import('Model', 'Cart');
+		$this->Cart = &new Cart;
+		if ($this->Cart->isFreeShipping()) {
+			// udelam to tak, ze nastavim hodnotu kosiku na strasne moc a tim padem budu mit v kosiku vzdycky vic, nez je
+			// minimalni hodnota kosiku pro dopravu zdarma
+			$cart_stats['total_price'] = 99999;
+		}
 
 		// v selectu chci mit, kolik stoji doprava
 		foreach ($shipping_choices as $shipping_choice) {
